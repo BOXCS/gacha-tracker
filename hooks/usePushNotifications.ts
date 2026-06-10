@@ -18,7 +18,11 @@ export function usePushNotifications() {
   const registerServiceWorker = async () => {
     try {
       const registration = await navigator.serviceWorker.register('/sw.js')
-      const sub = await registration.pushManager.getSubscription()
+      // Add a 2-second timeout to prevent hanging on privacy browsers (e.g. Brave)
+      const sub = await Promise.race([
+        registration.pushManager.getSubscription(),
+        new Promise<null>((resolve) => setTimeout(() => resolve(null), 2000))
+      ])
       if (sub) {
         setSubscription(sub)
       }
@@ -32,19 +36,27 @@ export function usePushNotifications() {
 
   const subscribeToPush = async () => {
     setIsLoading(true)
+    setError(null)
     try {
-      const registration = await navigator.serviceWorker.ready
+      const registration = await navigator.serviceWorker.getRegistration()
+      if (!registration) throw new Error('Service worker tidak ditemukan.')
+
       const vapidPublicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
       if (!vapidPublicKey) {
         throw new Error('VAPID public key not configured')
       }
       const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey)
       
-      const sub = await registration.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: convertedVapidKey
-      })
+      const sub = await Promise.race([
+        registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: convertedVapidKey
+        }),
+        new Promise<null>((_, reject) => setTimeout(() => reject(new Error('Koneksi push notification terputus atau diblokir browser.')), 5000))
+      ])
 
+      if (!sub) throw new Error('Gagal berlangganan notifikasi.')
+      
       setSubscription(sub)
 
       const res = await fetch('/api/push/subscribe', {
@@ -59,6 +71,7 @@ export function usePushNotifications() {
     } catch (err) {
       console.error('Failed to subscribe: ', err)
       setError(err as Error)
+      alert(err instanceof Error ? err.message : 'Gagal menyalakan notifikasi. Pastikan browser Anda mendukung dan tidak memblokir notifikasi.')
     } finally {
       setIsLoading(false)
     }
