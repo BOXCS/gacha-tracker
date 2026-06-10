@@ -13,7 +13,7 @@ const fetcher = async (url: string) => {
     const sortA = a.sort_order ?? 0
     const sortB = b.sort_order ?? 0
     if (sortA !== sortB) return sortA - sortB
-    return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+    return new Date(a.created_at || 0).getTime() - new Date(b.created_at || 0).getTime()
   })
 }
 
@@ -82,7 +82,7 @@ export function useAccounts() {
       const sortA = a.sort_order ?? 0
       const sortB = b.sort_order ?? 0
       if (sortA !== sortB) return sortA - sortB
-      return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+      return new Date(a.created_at || 0).getTime() - new Date(b.created_at || 0).getTime()
     })
 
     await mutate(updatedData, false) // Revalidate is false initially

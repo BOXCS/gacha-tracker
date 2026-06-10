@@ -15,7 +15,7 @@ export function HistoryClient() {
     const names = new Set<string>()
     
     if (!isLoading && history.length > 0) {
-      const groupedByDate: Record<string, Record<string, number>> = {}
+      const groupedByDate: Record<string, Record<string, string | number>> = {}
 
       history.forEach(item => {
         const date = new Date(item.recorded_at).toLocaleDateString('id-ID', { month: 'short', day: 'numeric' })
