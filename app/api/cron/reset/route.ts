@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import webpush from 'web-push'
-import { getGameConfig, type GameType } from '@/lib/games'
+import { getGameConfig } from '@/lib/games'
 import { computeResin } from '@/lib/resin'
 
 const VAPID_PUBLIC_KEY = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || ''
@@ -87,7 +87,7 @@ export async function GET(request: Request) {
     // 3. Check Resin thresholds (80%, 90%, 100%)
     accounts?.forEach((acc: Record<string, unknown>) => {
       try {
-        const gameType = acc.game_type as GameType
+        const gameType = acc.game_type as string
         const currentResin = acc.current_resin as number
         const maxResin = acc.max_resin as number
         const lastUpdated = acc.last_updated_at as string
