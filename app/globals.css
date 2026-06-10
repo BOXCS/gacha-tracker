@@ -1,0 +1,215 @@
+@import "tw-animate-css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  .theme {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+  }
+  :root {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.87 0 0);
+    --chart-2: oklch(0.556 0 0);
+    --chart-3: oklch(0.439 0 0);
+    --chart-4: oklch(0.371 0 0);
+    --chart-5: oklch(0.269 0 0);
+    --radius: 0.625rem;
+    --bg-base: #f8f9fb;
+    --bg-surface: #ffffff;
+    --bg-surface-raised: #f1f3f7;
+    --text-primary: #111827;
+    --text-muted: #6b7280;
+    --accent-primary: #7c3aed;
+    --accent-subtle: #f5f3ff;
+    --border-default: #e5e7eb;
+    --state-success: #16a34a;
+    --state-warning: #d97706;
+    --state-danger: #dc2626;
+    --resin-fill: #7c3aed;
+    --resin-empty: #e5e7eb;
+    --resin-critical: #dc2626;
+    --resin-warning: #d97706;
+    --chart-primary: #7c3aed;
+    --chart-secondary: #0ea5e9;
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+  }
+  .dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+    --chart-1: oklch(0.87 0 0);
+    --chart-2: oklch(0.556 0 0);
+    --chart-3: oklch(0.439 0 0);
+    --chart-4: oklch(0.371 0 0);
+    --chart-5: oklch(0.269 0 0);
+    --bg-base: #0d0f14;
+    --bg-surface: #171923;
+    --bg-surface-raised: #1e2231;
+    --text-primary: #f1f5f9;
+    --text-muted: #8892a4;
+    --accent-primary: #8b5cf6;
+    --accent-subtle: #1e1533;
+    --border-default: #252b3b;
+    --state-success: #22c55e;
+    --state-warning: #f59e0b;
+    --state-danger: #ef4444;
+    --resin-fill: #8b5cf6;
+    --resin-empty: #252b3b;
+    --resin-critical: #ef4444;
+    --resin-warning: #f59e0b;
+    --chart-primary: #8b5cf6;
+    --chart-secondary: #38bdf8;
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+  }
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ─── Premium Design Tokens ─────────────────────────────────────────────── */
+:root {
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-blur: 16px;
+
+  /* Glow / neon */
+  --glow-accent: 0 0 24px rgba(124, 58, 237, 0.35);
+  --glow-warning: 0 0 24px rgba(217, 119, 6, 0.35);
+  --glow-critical: 0 0 24px rgba(220, 38, 38, 0.35);
+
+  /* Resin status gradients */
+  --gradient-resin-normal: linear-gradient(90deg, #7c3aed, #8b5cf6);
+  --gradient-resin-warning: linear-gradient(90deg, #d97706, #f59e0b);
+  --gradient-resin-full: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+.dark {
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Keyframe Animations ────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(239, 68, 68, 0.3); }
+  50% { box-shadow: 0 0 24px rgba(239, 68, 68, 0.7); }
+}
+
+@keyframes digit-flip {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ─── Utility classes ────────────────────────────────────────────────────── */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+}
+
+.resin-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--resin-fill) 0%,
+    color-mix(in srgb, var(--resin-fill) 70%, white) 50%,
+    var(--resin-fill) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 2.5s linear infinite;
+}
+
+.resin-shimmer-warning {
+  background: linear-gradient(
+    90deg,
+    var(--resin-warning) 0%,
+    color-mix(in srgb, var(--resin-warning) 70%, white) 50%,
+    var(--resin-warning) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 2s linear infinite;
+}
+
+.resin-pulse-critical {
+  background: var(--resin-critical);
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* Noise grain texture overlay */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  border-radius: inherit;
+  z-index: 0;
+}

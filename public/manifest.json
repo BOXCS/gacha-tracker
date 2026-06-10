@@ -1,0 +1,18 @@
+{
+  "name": "Gacha Resin Tracker",
+  "short_name": "Resin Tracker",
+  "description": "Track your gacha game resin and daily checklist",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#171923",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
