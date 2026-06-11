@@ -213,3 +213,31 @@
   border-radius: inherit;
   z-index: 0;
 }
+
+/* ── Team Card: CSS-native entrance animation ─────────────────────────────── */
+/* Hanya menganimasikan opacity + transform (tidak ada layout recalculation).  */
+/* Ini jauh lebih ringan daripada Framer Motion JS per-kartu karena             */
+/* sepenuhnya berjalan di GPU compositor thread.                               */
+@keyframes teamCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-card-enter {
+  animation: teamCardEnter 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+  /* will-change hanya aktif saat animasi berjalan, browser otomatis hapus setelahnya */
+  will-change: transform, opacity;
+}
+
+/* Safety: hormati preferensi reduced-motion pengguna */
+@media (prefers-reduced-motion: reduce) {
+  .team-card-enter {
+    animation: none;
+  }
+}

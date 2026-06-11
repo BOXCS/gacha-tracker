@@ -1,7 +1,4 @@
-'use client'
-
 import React from 'react'
-import { motion } from 'framer-motion'
 import type { ScoredTeam } from '@/lib/teambuilder/types'
 import { cn } from '@/lib/utils'
 import { Swords, Zap, Wand2, HeartPulse, Shield } from 'lucide-react'
@@ -41,13 +38,14 @@ export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
   const { characters, score, category, reasonSummary } = teamData
   const cat = categoryConfig[category]
 
+  // CSS-driven stagger: hanya 6 kartu pertama yang animate, sisanya muncul instan
+  // Ini jauh lebih ringan daripada JS-driven Framer Motion per kartu
+  const animDelay = index < 6 ? `${index * 60}ms` : '0ms'
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
-      whileHover={{ y: -2, transition: { duration: 0.2 } }}
-      className="group flex flex-col gap-3 p-3.5 rounded-2xl border border-white/8 bg-white/[0.025] hover:bg-white/[0.04] hover:border-white/15 transition-colors duration-200 cursor-default overflow-hidden relative"
+    <div
+      className="team-card-enter flex flex-col gap-3 p-3.5 rounded-2xl border border-white/8 bg-white/[0.025] hover:bg-white/[0.04] hover:border-white/15 hover:-translate-y-0.5 transition-[colors,transform] duration-200 cursor-default overflow-hidden relative"
+      style={{ animationDelay: animDelay }}
     >
       {/* Top gradient accent */}
       <div className={cn("absolute top-0 left-0 right-0 h-[1px]", cat.dot === 'bg-amber-400' && "bg-gradient-to-r from-amber-500/60 via-amber-400/30 to-transparent", cat.dot === 'bg-purple-400' && "bg-gradient-to-r from-purple-500/60 via-purple-400/30 to-transparent", cat.dot === 'bg-emerald-400' && "bg-gradient-to-r from-emerald-500/60 via-emerald-400/30 to-transparent", cat.dot === 'bg-blue-400' && "bg-gradient-to-r from-blue-500/60 via-blue-400/30 to-transparent")} />
@@ -83,8 +81,8 @@ export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-sm font-black text-white/95 drop-shadow">{initials}</span>
                 </div>
-                {/* Role badge */}
-                <div className="absolute bottom-0.5 right-0.5 bg-black/50 backdrop-blur-sm rounded-md px-1 py-0.5 flex items-center gap-0.5 text-white/90">
+                {/* Role badge — bg saja, tanpa backdrop-blur agar tidak trigger compositing */}
+                <div className="absolute bottom-0.5 right-0.5 bg-black/60 rounded-md px-1 py-0.5 flex items-center gap-0.5 text-white/90">
                   {role.icon}
                 </div>
               </div>
@@ -128,6 +126,6 @@ export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
           ))}
         </div>
       )}
-    </motion.div>
+    </div>
   )
 }
