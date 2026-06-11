@@ -1,86 +1,133 @@
+'use client'
+
 import React from 'react'
+import { motion } from 'framer-motion'
 import type { ScoredTeam } from '@/lib/teambuilder/types'
 import { cn } from '@/lib/utils'
 import { Swords, Zap, Wand2, HeartPulse, Shield } from 'lucide-react'
 
 interface TeamCardProps {
   teamData: ScoredTeam
+  index?: number
 }
 
-const elementColors: Record<string, string> = {
-  Pyro: 'from-orange-500/80 to-red-600/80',
-  Hydro: 'from-blue-400/80 to-blue-600/80',
-  Anemo: 'from-emerald-300/80 to-teal-500/80',
-  Electro: 'from-purple-400/80 to-purple-600/80',
-  Dendro: 'from-green-400/80 to-green-600/80',
-  Cryo: 'from-cyan-300/80 to-cyan-500/80',
-  Geo: 'from-amber-400/80 to-amber-600/80',
-  Physical: 'from-gray-300/80 to-gray-500/80'
+const elementColors: Record<string, { from: string; to: string; glow: string; text: string }> = {
+  Pyro:     { from: 'from-orange-500', to: 'to-red-600',    glow: 'shadow-orange-500/30', text: 'text-orange-300' },
+  Hydro:    { from: 'from-blue-400',   to: 'to-blue-600',   glow: 'shadow-blue-500/30',   text: 'text-blue-300' },
+  Anemo:    { from: 'from-teal-400',   to: 'to-emerald-500',glow: 'shadow-teal-500/30',   text: 'text-teal-300' },
+  Electro:  { from: 'from-purple-400', to: 'to-violet-600', glow: 'shadow-purple-500/30', text: 'text-purple-300' },
+  Dendro:   { from: 'from-green-400',  to: 'to-green-600',  glow: 'shadow-green-500/30',  text: 'text-green-300' },
+  Cryo:     { from: 'from-cyan-300',   to: 'to-cyan-500',   glow: 'shadow-cyan-500/30',   text: 'text-cyan-300' },
+  Geo:      { from: 'from-amber-400',  to: 'to-yellow-600', glow: 'shadow-amber-500/30',  text: 'text-amber-300' },
+  Physical: { from: 'from-slate-400',  to: 'to-slate-600',  glow: 'shadow-slate-500/30',  text: 'text-slate-300' },
+}
+
+const categoryConfig = {
+  meta:    { label: 'Meta',        bg: 'bg-amber-500/15',  border: 'border-amber-500/30',  text: 'text-amber-400',  dot: 'bg-amber-400' },
+  niche:   { label: 'Niche',       bg: 'bg-purple-500/15', border: 'border-purple-500/30', text: 'text-purple-400', dot: 'bg-purple-400' },
+  f2p:     { label: 'F2P',         bg: 'bg-emerald-500/15',border: 'border-emerald-500/30',text: 'text-emerald-400',dot: 'bg-emerald-400' },
+  general: { label: 'Valid',       bg: 'bg-blue-500/15',   border: 'border-blue-500/30',   text: 'text-blue-400',   dot: 'bg-blue-400' },
 }
 
 const roleIcons = {
-  dps: <Swords className="w-3 h-3" />,
-  sub_dps: <Zap className="w-3 h-3" />,
-  support: <Wand2 className="w-3 h-3" />,
-  healer: <HeartPulse className="w-3 h-3" />,
-  shielder: <Shield className="w-3 h-3" />
+  dps:     { icon: <Swords className="w-2.5 h-2.5" />,    label: 'DPS' },
+  sub_dps: { icon: <Zap className="w-2.5 h-2.5" />,       label: 'Sub' },
+  support: { icon: <Wand2 className="w-2.5 h-2.5" />,     label: 'Sup' },
+  healer:  { icon: <HeartPulse className="w-2.5 h-2.5" />,label: 'Heal' },
+  shielder:{ icon: <Shield className="w-2.5 h-2.5" />,    label: 'Shld' },
 }
 
-export function TeamCard({ teamData }: TeamCardProps) {
+export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
   const { characters, score, category, reasonSummary } = teamData
+  const cat = categoryConfig[category]
 
   return (
-    <div className="flex flex-col gap-3 p-3 rounded-xl border border-white/10 bg-card/40 backdrop-blur-md hover:bg-card/60 transition-colors">
-      
-      {/* Header: Score & Category */}
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
+      whileHover={{ y: -2, transition: { duration: 0.2 } }}
+      className="group flex flex-col gap-3 p-3.5 rounded-2xl border border-white/8 bg-white/[0.025] hover:bg-white/[0.04] hover:border-white/15 transition-colors duration-200 cursor-default overflow-hidden relative"
+    >
+      {/* Top gradient accent */}
+      <div className={cn("absolute top-0 left-0 right-0 h-[1px]", cat.dot === 'bg-amber-400' && "bg-gradient-to-r from-amber-500/60 via-amber-400/30 to-transparent", cat.dot === 'bg-purple-400' && "bg-gradient-to-r from-purple-500/60 via-purple-400/30 to-transparent", cat.dot === 'bg-emerald-400' && "bg-gradient-to-r from-emerald-500/60 via-emerald-400/30 to-transparent", cat.dot === 'bg-blue-400' && "bg-gradient-to-r from-blue-500/60 via-blue-400/30 to-transparent")} />
+
+      {/* Header row */}
       <div className="flex items-center justify-between">
-        <div className="flex gap-2">
-          {category === 'meta' && <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 uppercase">Meta</span>}
-          {category === 'niche' && <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 uppercase">Niche</span>}
-          {category === 'f2p' && <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/30 uppercase">F2P Friendly</span>}
-          {category === 'general' && <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 uppercase">Valid</span>}
-        </div>
-        <div className="flex items-center gap-1 text-xs font-mono font-bold text-muted-foreground">
-          Score: <span className="text-primary text-sm">{score.total}</span>
-        </div>
+        <span className={cn("inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase border", cat.bg, cat.border, cat.text)}>
+          <span className={cn("w-1.5 h-1.5 rounded-full", cat.dot)} />
+          {cat.label}
+        </span>
+        <span className="text-[10px] font-mono text-muted-foreground/50">
+          {score.total}<span className="text-muted-foreground/30">pts</span>
+        </span>
       </div>
 
-      {/* Characters List (Compact) */}
+      {/* Character avatars */}
       <div className="flex gap-2">
-        {characters.map(char => {
+        {characters.map((char) => {
           const initials = char.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase()
-          const bgGradient = elementColors[char.element] || 'from-gray-500 to-gray-700'
-          
+          const elColor = elementColors[char.element] || elementColors.Physical
+          const role = roleIcons[char.role]
+
           return (
-            <div key={char.id} className="flex-1 flex flex-col items-center gap-1" title={char.name}>
-              {/* Avatar Square */}
-              <div className={cn("w-full aspect-square rounded-lg bg-gradient-to-br flex items-center justify-center relative shadow-inner", bgGradient)}>
-                <span className="text-sm font-black text-white/90 drop-shadow-md">{initials}</span>
-                
-                {/* Role Icon Badge */}
-                <div className="absolute -bottom-1 -right-1 bg-black/60 backdrop-blur-sm rounded-full p-0.5 text-white/90 border border-white/10 shadow-sm">
-                  {roleIcons[char.role]}
+            <div key={char.id} className="flex-1 flex flex-col items-center gap-1.5">
+              {/* Avatar */}
+              <div className={cn(
+                "w-full aspect-square rounded-xl bg-gradient-to-br relative overflow-hidden",
+                `shadow-lg ${elColor.glow}`,
+                elColor.from, elColor.to
+              )}>
+                {/* Inner highlight */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-sm font-black text-white/95 drop-shadow">{initials}</span>
+                </div>
+                {/* Role badge */}
+                <div className="absolute bottom-0.5 right-0.5 bg-black/50 backdrop-blur-sm rounded-md px-1 py-0.5 flex items-center gap-0.5 text-white/90">
+                  {role.icon}
                 </div>
               </div>
-              
+
               {/* Name */}
-              <span className="text-[10px] font-medium text-center truncate w-full text-muted-foreground">
-                {char.name}
+              <span className={cn("text-[9px] font-semibold text-center truncate w-full leading-none", elColor.text)}>
+                {char.name.split(' ')[0]}
               </span>
             </div>
           )
         })}
       </div>
 
-      {/* Reasons & Score Breakdown */}
-      <div className="flex flex-wrap gap-1 mt-1">
-        {reasonSummary.map((reason, idx) => (
-          <span key={idx} className="px-1.5 py-0.5 text-[9px] rounded bg-white/5 text-muted-foreground border border-white/5">
-            {reason}
-          </span>
+      {/* Score mini-bars */}
+      <div className="grid grid-cols-2 gap-1">
+        {[
+          { label: 'Syn', val: score.synergyScore, max: 40 },
+          { label: 'Cov', val: score.coverageScore, max: 30 },
+          { label: 'Ele', val: score.elementScore, max: 30 },
+          { label: 'Con', val: score.contentScore, max: 20 },
+        ].map(({ label, val, max }) => (
+          <div key={label} className="flex items-center gap-1.5">
+            <span className="text-[8px] font-mono text-muted-foreground/40 w-5 shrink-0">{label}</span>
+            <div className="flex-1 h-1 bg-white/5 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-white/30 rounded-full"
+                style={{ width: `${Math.min(100, (val / max) * 100)}%` }}
+              />
+            </div>
+          </div>
         ))}
       </div>
-      
-    </div>
+
+      {/* Reason chips */}
+      {reasonSummary.length > 0 && (
+        <div className="flex flex-wrap gap-1">
+          {reasonSummary.slice(0, 3).map((reason, idx) => (
+            <span key={idx} className="px-1.5 py-0.5 text-[9px] rounded-md bg-white/[0.04] text-muted-foreground/50 border border-white/[0.06]">
+              {reason}
+            </span>
+          ))}
+        </div>
+      )}
+    </motion.div>
   )
 }
