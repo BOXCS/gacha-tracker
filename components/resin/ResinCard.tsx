@@ -15,16 +15,18 @@ import { GameBadge } from '@/components/dashboard/GameBadge'
 import { ResinProgress } from './ResinProgress'
 import { CountdownTimer } from './CountdownTimer'
 import { DailyChecklist } from '@/components/checklist/DailyChecklist'
+import { WeeklyChecklist } from '@/components/checklist/WeeklyChecklist'
 import type { GameAccount } from '@/hooks/useAccounts'
 import type { DailyTask } from '@/hooks/useTasks'
 
 interface ResinCardProps {
   account: GameAccount
   tasks?: DailyTask[]
+  weeklyTasks?: DailyTask[]
   onUpdate?: (id: string, currentResin: number) => void
   onInlineUpdate?: (id: string, currentResin?: number, secondaryResin?: number) => Promise<void>
   onDelete?: (id: string) => void
-  onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean) => void
+  onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean, taskType?: 'daily' | 'weekly') => void
   dragHandleProps?: Record<string, unknown>
   /** Animation delay for staggered grid entrance */
   delay?: number
@@ -52,7 +54,7 @@ function useMagneticHover(strength = 6) {
   return { springX, springY, handleMouseMove, handleMouseLeave }
 }
 
-export function ResinCard({ account, tasks = [], onUpdate, onInlineUpdate, onDelete, onToggleTask, dragHandleProps, delay = 0 }: ResinCardProps) {
+export function ResinCard({ account, tasks = [], weeklyTasks = [], onUpdate, onInlineUpdate, onDelete, onToggleTask, dragHandleProps, delay = 0 }: ResinCardProps) {
   const config = getGameConfig(account.game_type)
 
   const now = new Date()
@@ -216,7 +218,7 @@ export function ResinCard({ account, tasks = [], onUpdate, onInlineUpdate, onDel
               'rounded-full px-2 py-0.5 text-xs font-semibold',
               status === 'full'
                 ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
-                : 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400'
+                : 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:amber-400'
             )}
           >
             {status === 'full' ? 'PENUH' : 'HAMPIR PENUH'}
@@ -224,15 +226,23 @@ export function ResinCard({ account, tasks = [], onUpdate, onInlineUpdate, onDel
         )}
       </div>
 
-      {/* Daily Checklist */}
+      {/* Daily & Weekly Checklist */}
       {onToggleTask && (
         <div className="border-t border-[--border-default] bg-[--bg-surface-raised]/50 px-3 py-2.5 dark:bg-black/10">
-          <DailyChecklist
-            accountId={account.id}
-            gameType={account.game_type}
-            tasks={tasks}
-            onToggle={onToggleTask}
-          />
+          <div className="flex flex-col gap-3">
+            <DailyChecklist
+              accountId={account.id}
+              gameType={account.game_type}
+              tasks={tasks}
+              onToggle={(a, k, l, d) => onToggleTask(a, k, l, d, 'daily')}
+            />
+            <WeeklyChecklist
+              accountId={account.id}
+              gameType={account.game_type}
+              tasks={weeklyTasks}
+              onToggle={(a, k, l, d) => onToggleTask(a, k, l, d, 'weekly')}
+            />
+          </div>
         </div>
       )}
     </motion.div>

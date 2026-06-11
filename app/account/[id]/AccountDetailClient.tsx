@@ -6,12 +6,13 @@ import { motion } from 'framer-motion'
 import { ChevronLeft, Save, Trash2, RefreshCw, Edit2 } from 'lucide-react'
 import { useAccounts } from '@/hooks/useAccounts'
 import { useTasks } from '@/hooks/useTasks'
-import { getCurrentGameDate } from '@/lib/reset'
+import { getCurrentGameDate, getWeeklyResetDate } from '@/lib/reset'
 import { getGameConfig } from '@/lib/games'
 import { GameBadge } from '@/components/dashboard/GameBadge'
 import { ResinProgress } from '@/components/resin/ResinProgress'
 import { CountdownTimer } from '@/components/resin/CountdownTimer'
 import { DailyChecklist } from '@/components/checklist/DailyChecklist'
+import { WeeklyChecklist } from '@/components/checklist/WeeklyChecklist'
 import { computeResin, computeSecondsToFull, computeResinPercent, getResinStatus } from '@/lib/resin'
 import { cn } from '@/lib/utils'
 import { UpdateResinDialog } from '@/components/resin/UpdateResinDialog'
@@ -24,7 +25,8 @@ export function AccountDetailClient({ accountId }: Props) {
   const { accounts, isLoading: accountsLoading, updateAccount, updateResin, deleteAccount } = useAccounts()
   
   const [gameDate] = useState(() => getCurrentGameDate('genshin'))
-  const { tasks, toggleTask } = useTasks(gameDate)
+  const [weeklyDate] = useState(() => getWeeklyResetDate('genshin'))
+  const { tasks, weeklyTasks, toggleTask } = useTasks(gameDate, weeklyDate)
 
   const account = accounts.find(a => a.id === accountId)
   
@@ -50,6 +52,7 @@ export function AccountDetailClient({ accountId }: Props) {
 
   const config = getGameConfig(account.game_type)
   const accountTasks = tasks.filter(t => t.account_id === account.id)
+  const accountWeeklyTasks = weeklyTasks.filter(t => t.account_id === account.id)
 
   const now = new Date()
   const computedResin = computeResin(account.current_resin, account.max_resin, account.last_updated_at, config.regenRateSeconds, now)
@@ -188,14 +191,28 @@ export function AccountDetailClient({ accountId }: Props) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="rounded-2xl border border-[--border-default] bg-[--bg-surface] p-6 shadow-sm"
           >
-            <DailyChecklist
-              accountId={account.id}
-              gameType={account.game_type}
-              tasks={accountTasks}
-              onToggle={toggleTask}
-            />
+            <div className="grid grid-cols-1 gap-6 relative z-10">
+              <section className="rounded-2xl border border-[--border-default] bg-[--bg-surface] p-6 shadow-sm">
+                <h3 className="mb-4 text-lg font-bold text-[--text-primary]">Daily Tasks</h3>
+                <DailyChecklist
+                  accountId={account.id}
+                  gameType={account.game_type}
+                  tasks={accountTasks}
+                  onToggle={toggleTask}
+                />
+              </section>
+              
+              <section className="rounded-2xl border border-[--border-default] bg-[--bg-surface] p-6 shadow-sm">
+                <h3 className="mb-4 text-lg font-bold text-[--text-primary]">Weekly Tasks</h3>
+                <WeeklyChecklist
+                  accountId={account.id}
+                  gameType={account.game_type}
+                  tasks={accountWeeklyTasks}
+                  onToggle={toggleTask}
+                />
+              </section>
+            </div>
           </motion.section>
 
           {/* Settings Section */}

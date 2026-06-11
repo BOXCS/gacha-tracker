@@ -10,9 +10,13 @@ const fetcher = async (url: string) => {
   return json.data as DailyTask[]
 }
 
-export function useTasks(date: string) {
+export function useTasks(date: string, weeklyDate?: string) {
+  const query = new URLSearchParams()
+  if (date) query.append('date', date)
+  if (weeklyDate) query.append('weeklyDate', weeklyDate)
+  
   const { data, error, isLoading, mutate } = useSWR(
-    date ? `/api/tasks?date=${date}` : null,
+    date ? `/api/tasks?${query.toString()}` : null,
     fetcher
   )
 
@@ -20,13 +24,16 @@ export function useTasks(date: string) {
     accountId: string,
     taskKey: string,
     label: string,
-    isDone: boolean
+    isDone: boolean,
+    taskType: 'daily' | 'weekly' = 'daily'
   ) => {
     // Optimistic UI update
+    const targetDate = taskType === 'weekly' && weeklyDate ? weeklyDate : date
+    
     await mutate(
       (currentTasks = []) => {
         const existingIndex = currentTasks.findIndex(
-          (t) => t.account_id === accountId && t.task_key === taskKey && t.date === date
+          (t) => t.account_id === accountId && t.task_key === taskKey && t.date === targetDate && t.task_type === taskType
         )
         if (existingIndex >= 0) {
           const newTasks = [...currentTasks]
@@ -41,8 +48,9 @@ export function useTasks(date: string) {
               account_id: accountId,
               task_key: taskKey,
               label,
-              date,
+              date: targetDate,
               is_done: isDone,
+              task_type: taskType,
             } as DailyTask,
           ]
         }
@@ -55,7 +63,7 @@ export function useTasks(date: string) {
       const res = await fetch('/api/tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ accountId, taskKey, label, date, isDone }),
+        body: JSON.stringify({ accountId, taskKey, label, date: targetDate, isDone, taskType }),
       })
       const json = await res.json()
       if (json.status === 'error') throw new Error(json.message)
@@ -68,8 +76,13 @@ export function useTasks(date: string) {
     }
   }
 
+  const allTasks = data ?? []
+  const dailyTasks = allTasks.filter(t => t.task_type === 'daily' || !t.task_type)
+  const weeklyTasks = allTasks.filter(t => t.task_type === 'weekly')
+
   return {
-    tasks: data ?? [],
+    tasks: dailyTasks,
+    weeklyTasks,
     isLoading,
     error,
     toggleTask,

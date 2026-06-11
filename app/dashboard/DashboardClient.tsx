@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { Zap, Plus, RefreshCw, X, Settings, LineChart as LineChartIcon } from 'lucide-react'
 import { useAccounts } from '@/hooks/useAccounts'
 import { useTasks } from '@/hooks/useTasks'
-import { getCurrentGameDate } from '@/lib/reset'
+import { getCurrentGameDate, getWeeklyResetDate } from '@/lib/reset'
 import { OverviewGrid } from '@/components/dashboard/OverviewGrid'
 import { SettingsModal } from '@/components/dashboard/SettingsModal'
 import { ServerResetCountdown } from '@/components/dashboard/ServerResetCountdown'
@@ -199,7 +199,8 @@ export function DashboardClient() {
   // Asumsi semua game menggunakan timezone server UTC+8 (04:00 AM) yang sama
   // Jadi kita bisa menggunakan 'genshin' untuk mendapatkan gameDate global hari ini
   const [gameDate] = useState(() => getCurrentGameDate('genshin'))
-  const { tasks, toggleTask, isLoading: tasksLoading } = useTasks(gameDate)
+  const [weeklyDate] = useState(() => getWeeklyResetDate('genshin'))
+  const { tasks, weeklyTasks, toggleTask, isLoading: tasksLoading } = useTasks(gameDate, weeklyDate)
 
   const [showAddModal, setShowAddModal] = useState(false)
   const [showSettingsModal, setShowSettingsModal] = useState(false)

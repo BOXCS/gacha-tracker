@@ -49,3 +49,37 @@ export function getCurrentGameDate(gameType: GameType, now: Date = new Date()): 
 
   return `${yyyy}-${mm}-${dd}`
 }
+
+/**
+ * Returns the current "weekly reset date" formatted as YYYY-MM-DD.
+ * It always returns the date of the Monday of the current game week.
+ * 
+ * If the current day is Sunday 03:00 AM, it belongs to the previous Monday.
+ * If the current day is Monday 05:00 AM, it belongs to the current Monday.
+ */
+export function getWeeklyResetDate(gameType: GameType, now: Date = new Date()): string {
+  // First, get the current game date (which already accounts for the 04:00 AM reset)
+  const gameDateStr = getCurrentGameDate(gameType, now)
+  
+  // Parse the game date as UTC to do date math
+  const [yyyy, mm, dd] = gameDateStr.split('-').map(Number)
+  const gameTime = new Date(Date.UTC(yyyy, mm - 1, dd))
+  
+  // getUTCDay() returns 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+  const dayOfWeek = gameTime.getUTCDay()
+  
+  // Calculate how many days we are past Monday
+  // If today is Monday (1), diff is 0
+  // If today is Tuesday (2), diff is 1
+  // If today is Sunday (0), we want to go back to previous Monday (-6 days), so diff is 6
+  const diffFromMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1
+  
+  // Subtract diffFromMonday from the current date
+  gameTime.setUTCDate(gameTime.getUTCDate() - diffFromMonday)
+  
+  const resetYyyy = gameTime.getUTCFullYear()
+  const resetMm = String(gameTime.getUTCMonth() + 1).padStart(2, '0')
+  const resetDd = String(gameTime.getUTCDate()).padStart(2, '0')
+  
+  return `${resetYyyy}-${resetMm}-${resetDd}`
+}

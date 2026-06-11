@@ -58,9 +58,12 @@ export async function GET(request: Request) {
 
     const notificationsToSend: { sub: unknown; payload: Record<string, string> }[] = []
 
-    // 2. Check Daily Reset (04:00 AM UTC+8 is 20:00 UTC)
+    // 2. Check Daily/Weekly Reset (04:00 AM UTC+8 is 20:00 UTC)
     // Run this if the current UTC hour is 20
     if (now.getUTCHours() === 20) {
+      // Sunday in UTC (day 0) at 20:00 corresponds to Monday 04:00 AM in UTC+8
+      const isWeeklyReset = now.getUTCDay() === 0
+
       // Find users with daily_reset_notif = true
       const resetUsers = new Set<string>()
       accounts?.forEach((acc: Record<string, unknown>) => {
@@ -74,8 +77,10 @@ export async function GET(request: Request) {
             notificationsToSend.push({
               sub,
               payload: {
-                title: 'Daily Reset!',
-                body: 'Server telah di-reset. Waktu yang tepat untuk mengerjakan daily tasks!',
+                title: isWeeklyReset ? 'Weekly Reset!' : 'Daily Reset!',
+                body: isWeeklyReset 
+                  ? 'Server telah di-reset untuk minggu ini. Selesaikan weekly boss dan misi lainnya!'
+                  : 'Server telah di-reset. Waktu yang tepat untuk mengerjakan daily tasks!',
                 icon: '/icon-192x192.png'
               }
             })

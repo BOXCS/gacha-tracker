@@ -9,9 +9,10 @@ interface TaskItemProps {
   isDone: boolean
   onToggle: () => void
   disabled?: boolean
+  isWeekly?: boolean
 }
 
-export function TaskItem({ label, isDone, onToggle, disabled }: TaskItemProps) {
+export function TaskItem({ label, isDone, onToggle, disabled, isWeekly }: TaskItemProps) {
   return (
     <button
       onClick={onToggle}
@@ -41,14 +42,21 @@ export function TaskItem({ label, isDone, onToggle, disabled }: TaskItemProps) {
       </div>
 
       <div className="relative flex-1 overflow-hidden">
-        <span
-          className={cn(
-            'block truncate text-sm transition-colors duration-200',
-            isDone ? 'text-[--text-muted]' : 'text-[--text-primary]'
+        <div className="flex items-center gap-2">
+          <span
+            className={cn(
+              'block truncate text-sm transition-colors duration-200',
+              isDone ? 'text-[--text-muted]' : 'text-[--text-primary]'
+            )}
+          >
+            {label}
+          </span>
+          {isWeekly && (
+            <span className="rounded bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-medium text-amber-500 border border-amber-500/20">
+              Weekly
+            </span>
           )}
-        >
-          {label}
-        </span>
+        </div>
         
         {/* Animated Strikethrough line */}
         <motion.div

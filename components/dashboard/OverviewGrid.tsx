@@ -13,10 +13,11 @@ interface OverviewGridProps {
   accounts: GameAccount[]
   isLoading: boolean
   tasks?: DailyTask[]
+  weeklyTasks?: DailyTask[]
   onUpdate: (id: string, currentResin: number) => void
   onInlineUpdate?: (id: string, currentResin?: number, secondaryResin?: number) => Promise<void>
   onDelete: (id: string) => void
-  onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean) => void
+  onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean, taskType?: 'daily' | 'weekly') => void
   onReorder: (updates: { id: string; sort_order: number }[]) => void
   onAddClick: () => void
 }
@@ -91,13 +92,14 @@ interface SortableResinCardProps {
   account: GameAccount
   index: number
   tasks: DailyTask[]
+  weeklyTasks: DailyTask[]
   onUpdate: (id: string, currentResin: number) => void
   onInlineUpdate?: (id: string, currentResin?: number, secondaryResin?: number) => Promise<void>
   onDelete: (id: string) => void
-  onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean) => void
+  onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean, taskType?: 'daily' | 'weekly') => void
 }
 
-function SortableResinCard({ account, index, tasks, onUpdate, onInlineUpdate, onDelete, onToggleTask }: SortableResinCardProps) {
+function SortableResinCard({ account, index, tasks, weeklyTasks, onUpdate, onInlineUpdate, onDelete, onToggleTask }: SortableResinCardProps) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: account.id })
 
   const style = {
@@ -113,6 +115,7 @@ function SortableResinCard({ account, index, tasks, onUpdate, onInlineUpdate, on
         account={account}
         delay={isDragging ? 0 : index * 0.08}
         tasks={tasks}
+        weeklyTasks={weeklyTasks}
         onUpdate={onUpdate}
         onInlineUpdate={onInlineUpdate}
         onDelete={onDelete}
@@ -127,6 +130,7 @@ export function OverviewGrid({
   accounts, 
   isLoading, 
   tasks = [], 
+  weeklyTasks = [],
   onUpdate, 
   onInlineUpdate, 
   onDelete, 
@@ -187,6 +191,7 @@ export function OverviewGrid({
               account={account}
               index={index}
               tasks={tasks.filter((t) => t.account_id === account.id)}
+              weeklyTasks={weeklyTasks.filter((t) => t.account_id === account.id)}
               onUpdate={onUpdate}
               onInlineUpdate={onInlineUpdate}
               onDelete={onDelete}

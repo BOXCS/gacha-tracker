@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll, afterAll, vi } from 'vitest'
-import { getCurrentGameDate } from './reset'
+import { getCurrentGameDate, getWeeklyResetDate } from './reset'
 
 describe('getCurrentGameDate', () => {
   beforeAll(() => {
