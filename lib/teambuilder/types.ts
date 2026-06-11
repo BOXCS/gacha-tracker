@@ -22,6 +22,7 @@ export interface Character {
   id: string              // slug unik: "genshin_hu_tao"
   gameType: GameType
   name: string
+  imageUrl?: string       // URL avatar karakter
   element: string         // Pyro, Cryo, Quantum, Spectro, dsb
   role: CharacterRole
   rarity: 4 | 5

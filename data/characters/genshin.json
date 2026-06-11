@@ -3,120 +3,242 @@
     "id": "genshin_hu_tao",
     "gameType": "genshin",
     "name": "Hu Tao",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Hutao.png",
     "element": "Pyro",
     "role": "dps",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_xingqiu", "genshin_yelan", "genshin_zhongli"],
-    "recommendedFor": ["spiral_abyss", "domain"],
-    "tags": ["vaporize"]
+    "synergies": [
+      "genshin_xingqiu",
+      "genshin_yelan",
+      "genshin_zhongli"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "domain"
+    ],
+    "tags": [
+      "vaporize"
+    ]
   },
   {
     "id": "genshin_xingqiu",
     "gameType": "genshin",
     "name": "Xingqiu",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Xingqiu.png",
     "element": "Hydro",
     "role": "sub_dps",
     "rarity": 4,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_hu_tao", "genshin_raiden", "genshin_xiangling"],
-    "recommendedFor": ["spiral_abyss", "imaginarium_theater", "overworld", "domain"],
-    "tags": ["vaporize", "hydro_application", "national"]
+    "synergies": [
+      "genshin_hu_tao",
+      "genshin_raiden",
+      "genshin_xiangling"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "imaginarium_theater",
+      "overworld",
+      "domain"
+    ],
+    "tags": [
+      "vaporize",
+      "hydro_application",
+      "national"
+    ]
   },
   {
     "id": "genshin_zhongli",
     "gameType": "genshin",
     "name": "Zhongli",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Zhongli.png",
     "element": "Geo",
     "role": "shielder",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_hu_tao", "genshin_neuvillette"],
-    "recommendedFor": ["spiral_abyss", "domain", "overworld"],
-    "tags": ["shield", "universal"]
+    "synergies": [
+      "genshin_hu_tao",
+      "genshin_neuvillette"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "domain",
+      "overworld"
+    ],
+    "tags": [
+      "shield",
+      "universal"
+    ]
   },
   {
     "id": "genshin_yelan",
     "gameType": "genshin",
     "name": "Yelan",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Yelan.png",
     "element": "Hydro",
     "role": "sub_dps",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_hu_tao", "genshin_raiden", "genshin_xingqiu"],
-    "recommendedFor": ["spiral_abyss", "overworld", "domain"],
-    "tags": ["vaporize", "hydro_application", "exploration"]
+    "synergies": [
+      "genshin_hu_tao",
+      "genshin_raiden",
+      "genshin_xingqiu"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "overworld",
+      "domain"
+    ],
+    "tags": [
+      "vaporize",
+      "hydro_application",
+      "exploration"
+    ]
   },
   {
     "id": "genshin_raiden",
     "gameType": "genshin",
     "name": "Raiden Shogun",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Shougun.png",
     "element": "Electro",
     "role": "dps",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_xingqiu", "genshin_xiangling", "genshin_bennett"],
-    "recommendedFor": ["spiral_abyss", "domain"],
-    "tags": ["national", "energy_recharge"]
+    "synergies": [
+      "genshin_xingqiu",
+      "genshin_xiangling",
+      "genshin_bennett"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "domain"
+    ],
+    "tags": [
+      "national",
+      "energy_recharge"
+    ]
   },
   {
     "id": "genshin_xiangling",
     "gameType": "genshin",
     "name": "Xiangling",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Xiangling.png",
     "element": "Pyro",
     "role": "sub_dps",
     "rarity": 4,
     "isFreeOrF2P": true,
-    "synergies": ["genshin_bennett", "genshin_xingqiu", "genshin_raiden", "genshin_childe"],
-    "recommendedFor": ["spiral_abyss", "domain"],
-    "tags": ["national", "vaporize", "snapshot"]
+    "synergies": [
+      "genshin_bennett",
+      "genshin_xingqiu",
+      "genshin_raiden",
+      "genshin_childe"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "domain"
+    ],
+    "tags": [
+      "national",
+      "vaporize",
+      "snapshot"
+    ]
   },
   {
     "id": "genshin_bennett",
     "gameType": "genshin",
     "name": "Bennett",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Bennett.png",
     "element": "Pyro",
     "role": "support",
     "rarity": 4,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_xiangling", "genshin_raiden", "genshin_kazuha"],
-    "recommendedFor": ["spiral_abyss", "imaginarium_theater", "domain"],
-    "tags": ["national", "attack_buff", "healer"]
+    "synergies": [
+      "genshin_xiangling",
+      "genshin_raiden",
+      "genshin_kazuha"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "imaginarium_theater",
+      "domain"
+    ],
+    "tags": [
+      "national",
+      "attack_buff",
+      "healer"
+    ]
   },
   {
     "id": "genshin_kazuha",
     "gameType": "genshin",
     "name": "Kaedehara Kazuha",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Kazuha.png",
     "element": "Anemo",
     "role": "support",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_bennett", "genshin_neuvillette", "genshin_childe", "genshin_xiangling"],
-    "recommendedFor": ["spiral_abyss", "overworld", "domain"],
-    "tags": ["crowd_control", "elemental_damage_buff"]
+    "synergies": [
+      "genshin_bennett",
+      "genshin_neuvillette",
+      "genshin_childe",
+      "genshin_xiangling"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "overworld",
+      "domain"
+    ],
+    "tags": [
+      "crowd_control",
+      "elemental_damage_buff"
+    ]
   },
   {
     "id": "genshin_furina",
     "gameType": "genshin",
     "name": "Furina",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Furina.png",
     "element": "Hydro",
     "role": "sub_dps",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_neuvillette", "genshin_jean", "genshin_baizhu"],
-    "recommendedFor": ["spiral_abyss", "domain"],
-    "tags": ["damage_buff", "hp_drain"]
+    "synergies": [
+      "genshin_neuvillette",
+      "genshin_jean",
+      "genshin_baizhu"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "domain"
+    ],
+    "tags": [
+      "damage_buff",
+      "hp_drain"
+    ]
   },
   {
     "id": "genshin_neuvillette",
     "gameType": "genshin",
     "name": "Neuvillette",
+    "imageUrl": "https://gi.yatta.moe/assets/UI/UI_AvatarIcon_Neuvillette.png",
     "element": "Hydro",
     "role": "dps",
     "rarity": 5,
     "isFreeOrF2P": false,
-    "synergies": ["genshin_furina", "genshin_kazuha", "genshin_zhongli", "genshin_baizhu"],
-    "recommendedFor": ["spiral_abyss", "overworld", "domain"],
-    "tags": ["charged_attack", "self_sustain"]
+    "synergies": [
+      "genshin_furina",
+      "genshin_kazuha",
+      "genshin_zhongli",
+      "genshin_baizhu"
+    ],
+    "recommendedFor": [
+      "spiral_abyss",
+      "overworld",
+      "domain"
+    ],
+    "tags": [
+      "charged_attack",
+      "self_sustain"
+    ]
   }
 ]

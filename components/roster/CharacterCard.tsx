@@ -56,9 +56,13 @@ export function CharacterCard({
     >
       {/* Background Avatar Section */}
       <div className={cn("h-24 w-full bg-gradient-to-br flex items-center justify-center relative", bgGradient)}>
-        <span className="text-3xl font-black text-white/90 drop-shadow-md tracking-tighter">
-          {initials}
-        </span>
+        {character.imageUrl ? (
+          <img src={character.imageUrl} alt={character.name} className="w-full h-full object-cover object-top opacity-90 mix-blend-luminosity hover:mix-blend-normal transition-all" />
+        ) : (
+          <span className="text-3xl font-black text-white/90 drop-shadow-md tracking-tighter">
+            {initials}
+          </span>
+        )}
         
         {/* Role Icon */}
         <div className="absolute top-2 right-2 bg-black/40 backdrop-blur-sm rounded-full p-1.5 text-white/90">

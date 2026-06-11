@@ -77,12 +77,16 @@ export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
                 elColor.from, elColor.to
               )}>
                 {/* Inner highlight */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent z-10" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-sm font-black text-white/95 drop-shadow">{initials}</span>
+                  {char.imageUrl ? (
+                    <img src={char.imageUrl} alt={char.name} className="w-full h-full object-cover object-top opacity-90" />
+                  ) : (
+                    <span className="text-sm font-black text-white/95 drop-shadow">{initials}</span>
+                  )}
                 </div>
                 {/* Role badge — bg saja, tanpa backdrop-blur agar tidak trigger compositing */}
-                <div className="absolute bottom-0.5 right-0.5 bg-black/60 rounded-md px-1 py-0.5 flex items-center gap-0.5 text-white/90">
+                <div className="absolute bottom-0.5 right-0.5 bg-black/60 rounded-md px-1 py-0.5 flex items-center gap-0.5 text-white/90 z-20">
                   {role.icon}
                 </div>
               </div>
