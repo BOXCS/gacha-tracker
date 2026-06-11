@@ -39,8 +39,10 @@ export default function TeamBuilderClient() {
 
   const ownedCharacters = React.useMemo(() => {
     if (!roster || !allGameCharacters.length) return []
-    const ownedIds = new Set(roster.filter(r => r.owned).map(r => r.character_id))
-    return allGameCharacters.filter(c => ownedIds.has(c.id))
+    const rosterMap = new Map(roster.filter(r => r.owned).map(r => [r.character_id, r.constellation || 0]))
+    return allGameCharacters
+      .filter(c => rosterMap.has(c.id))
+      .map(c => ({ ...c, constellation: rosterMap.get(c.id) || 0 }))
   }, [roster, allGameCharacters])
 
   useEffect(() => {

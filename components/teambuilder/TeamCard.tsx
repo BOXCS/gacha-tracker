@@ -89,6 +89,12 @@ export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
                 <div className="absolute bottom-0.5 right-0.5 bg-black/60 rounded-md px-1 py-0.5 flex items-center gap-0.5 text-white/90 z-20">
                   {role.icon}
                 </div>
+                {/* Constellation badge */}
+                {char.constellation > 0 && (
+                  <div className="absolute top-0.5 left-0.5 bg-yellow-500/90 text-yellow-950 rounded-sm px-1 py-0.5 text-[9px] leading-none font-bold z-20 shadow-sm border border-yellow-300/50">
+                    C{char.constellation}
+                  </div>
+                )}
               </div>
 
               {/* Name */}
@@ -107,6 +113,7 @@ export function TeamCard({ teamData, index = 0 }: TeamCardProps) {
           { label: 'Cov', val: score.coverageScore, max: 30 },
           { label: 'Ele', val: score.elementScore, max: 30 },
           { label: 'Con', val: score.contentScore, max: 20 },
+          ...(score.constellationScore > 0 ? [{ label: 'Cns', val: score.constellationScore, max: 40 }] : []),
         ].map(({ label, val, max }) => (
           <div key={label} className="flex items-center gap-1.5">
             <span className="text-[8px] font-mono text-muted-foreground/40 w-5 shrink-0">{label}</span>

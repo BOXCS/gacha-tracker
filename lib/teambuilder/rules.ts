@@ -1,4 +1,4 @@
-import type { Character, ContentType, TeamScore } from './types'
+import type { OwnedCharacter, ContentType, TeamScore } from './types'
 
 // Konstanta batas ukuran tim per game (saat ini di-hardcode)
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -10,7 +10,7 @@ export function getRequiredTeamSize(_gameType: string): number {
  * Validasi apakah kombinasi karakter membentuk tim yang valid
  */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function isValidTeam(team: Character[], _contentType: ContentType): boolean {
+export function isValidTeam(team: OwnedCharacter[], _contentType: ContentType): boolean {
   if (team.length === 0) return false
 
   // Minimal ada 1 DPS atau Sub DPS untuk memastikan tim punya damage dealer
@@ -28,7 +28,7 @@ export function isValidTeam(team: Character[], _contentType: ContentType): boole
  * Hitung skor kekuatan dan sinergi dari sebuah tim
  */
 export function scoreTeam(
-  team: Character[],
+  team: OwnedCharacter[],
   contentType: ContentType,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   _ownedIds: Set<string>
@@ -38,6 +38,7 @@ export function scoreTeam(
   let elementScore = 0
   let contentScore = 0
   let f2pScore = 0
+  let constellationScore = 0
 
   // 1. Coverage Score: Semakin lengkap kombinasi role, semakin bagus.
   // Idealnya ada Main DPS, Sub DPS, dan utilitas (Support/Healer/Shielder).
@@ -76,7 +77,25 @@ export function scoreTeam(
     else if (c.rarity === 4) f2pScore += 10
   })
 
-  const total = synergyScore + coverageScore + elementScore + contentScore + f2pScore
+  // 6. Constellation Score: Evaluasi bobot konstelasi
+  team.forEach(c => {
+    if (c.constellation > 0) {
+      if (c.constellationWeights && c.constellationWeights.length > c.constellation) {
+        constellationScore += c.constellationWeights[c.constellation]
+      } else if (c.constellationWeights && c.constellationWeights.length > 0) {
+        // Fallback ke bobot maksimum jika level konstelasi melebihi panjang array
+        constellationScore += c.constellationWeights[c.constellationWeights.length - 1]
+      } else {
+        // Fallback default jika data constellationWeights belum tersedia (2 poin per constalasi)
+        constellationScore += c.constellation * 2
+      }
+    } else if (c.constellationWeights && c.constellationWeights.length > 0) {
+       // Constellation 0 may also have a base weight defined in index 0
+       constellationScore += c.constellationWeights[0]
+    }
+  })
+
+  const total = synergyScore + coverageScore + elementScore + contentScore + f2pScore + constellationScore
 
   return {
     total,
@@ -84,6 +103,7 @@ export function scoreTeam(
     coverageScore,
     elementScore,
     contentScore,
-    f2pScore
+    f2pScore,
+    constellationScore
   }
 }

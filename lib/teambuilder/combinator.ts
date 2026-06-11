@@ -1,4 +1,4 @@
-import type { Character, ContentType, ScoredTeam } from './types'
+import type { OwnedCharacter, ContentType, ScoredTeam } from './types'
 import { isValidTeam, scoreTeam } from './rules'
 import { categorizeTeam, generateReasonSummary } from './categorizer'
 
@@ -32,7 +32,7 @@ function getCombinations<T>(arr: T[], k: number): T[][] {
  * agar ukuran tidak terlalu besar.
  */
 export async function generateTeamCombinations(
-  ownedCharacters: Character[],
+  ownedCharacters: OwnedCharacter[],
   contentType: ContentType,
   teamSize: number = 4,
   onProgress?: (progress: number) => void

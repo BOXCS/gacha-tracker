@@ -19,7 +19,8 @@
     ],
     "tags": [
       "vaporize"
-    ]
+    ],
+    "constellationWeights": [0, 15, 20, 25, 30, 35, 45]
   },
   {
     "id": "genshin_xingqiu",
@@ -116,7 +117,8 @@
     "tags": [
       "national",
       "energy_recharge"
-    ]
+    ],
+    "constellationWeights": [0, 5, 25, 30, 35, 40, 50]
   },
   {
     "id": "genshin_xiangling",
@@ -239,6 +241,7 @@
     "tags": [
       "charged_attack",
       "self_sustain"
-    ]
+    ],
+    "constellationWeights": [0, 15, 20, 25, 30, 35, 50]
   }
 ]

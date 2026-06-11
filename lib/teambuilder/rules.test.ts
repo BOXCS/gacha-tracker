@@ -3,22 +3,26 @@ import { isValidTeam, scoreTeam } from './rules'
 import { categorizeTeam } from './categorizer'
 import { generateTeamCombinations } from './combinator'
 import { getCharacterById } from '../../data/characters/index'
-import type { Character } from './types'
+import type { OwnedCharacter } from './types'
 
 describe('Rules Engine (Unit 3)', () => {
   // Helper untuk mengambil list character dari array mock
-  const getTeam = (ids: string[]): Character[] => {
-    return ids.map(id => getCharacterById(id)!).filter(Boolean)
+  const getTeam = (ids: string[], constellations: Record<string, number> = {}): OwnedCharacter[] => {
+    return ids.map(id => {
+      const char = getCharacterById(id)
+      if (!char) return null
+      return { ...char, constellation: constellations[id] || 0 }
+    }).filter(Boolean) as OwnedCharacter[]
   }
 
   it('isValidTeam: menolak tim tanpa damage dealer', () => {
     // Furina = sub_dps, jadi ini valid! Mari kita ubah agar tidak valid.
     // Jika Furina adalah sub_dps, maka ada damage dealer.
     const teamNoDps = [
-      { id: '1', role: 'healer' } as Character,
-      { id: '2', role: 'healer' } as Character,
-      { id: '3', role: 'shielder' } as Character,
-      { id: '4', role: 'support' } as Character
+      { id: '1', role: 'healer', constellation: 0 } as OwnedCharacter,
+      { id: '2', role: 'healer', constellation: 0 } as OwnedCharacter,
+      { id: '3', role: 'shielder', constellation: 0 } as OwnedCharacter,
+      { id: '4', role: 'support', constellation: 0 } as OwnedCharacter
     ]
     expect(isValidTeam(teamNoDps, 'spiral_abyss')).toBe(false)
   })
@@ -78,5 +82,20 @@ describe('Rules Engine (Unit 3)', () => {
     
     // Pastikan sorting berdasarkan total skor bekerja (tim pertama harusnya Vaporize optimal)
     expect(combinations[0].score.total).toBeGreaterThanOrEqual(combinations[1].score.total)
+  })
+
+  it('scoreTeam: memperhitungkan bobot konstelasi (C2 Raiden Shogun)', () => {
+    // Raiden Shogun punya constellationWeights: [0, 5, 25, 30, 35, 40, 50]
+    const teamC0 = getTeam(['genshin_raiden', 'genshin_xiangling', 'genshin_xingqiu', 'genshin_bennett'], { 'genshin_raiden': 0 })
+    const teamC2 = getTeam(['genshin_raiden', 'genshin_xiangling', 'genshin_xingqiu', 'genshin_bennett'], { 'genshin_raiden': 2 })
+    
+    const ownedIds = new Set(teamC0.map(c => c.id))
+    
+    const scoreC0 = scoreTeam(teamC0, 'spiral_abyss', ownedIds)
+    const scoreC2 = scoreTeam(teamC2, 'spiral_abyss', ownedIds)
+
+    // C2 (25 points) - C0 (0 points) = 25 points difference
+    expect(scoreC2.constellationScore).toBe(scoreC0.constellationScore + 25)
+    expect(scoreC2.total).toBe(scoreC0.total + 25)
   })
 })

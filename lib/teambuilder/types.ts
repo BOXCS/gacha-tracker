@@ -30,6 +30,11 @@ export interface Character {
   synergies: string[]     // id karakter lain yang sinergis
   recommendedFor: ContentType[]
   tags: string[]          // ['freeze', 'vaporize', 'hyperbloom', etc]
+  constellationWeights?: number[] // Tambahan skor per level konstelasi (index 0 = C0)
+}
+
+export interface OwnedCharacter extends Character {
+  constellation: number   // Level konstelasi aktual milik pengguna
 }
 
 export interface TeamScore {
@@ -39,12 +44,13 @@ export interface TeamScore {
   elementScore: number
   contentScore: number
   f2pScore: number
+  constellationScore: number // Skor berdasarkan konstelasi
 }
 
 export type TeamCategory = 'meta' | 'niche' | 'f2p' | 'general'
 
 export interface ScoredTeam {
-  characters: Character[]
+  characters: OwnedCharacter[]
   score: TeamScore
   category: TeamCategory
   reasonSummary: string[]
