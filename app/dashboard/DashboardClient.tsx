@@ -315,6 +315,7 @@ export function DashboardClient() {
           accounts={accounts}
           isLoading={accountsLoading || tasksLoading}
           tasks={tasks}
+          weeklyTasks={weeklyTasks}
           onUpdate={handleUpdateResin}
           onInlineUpdate={handleInlineUpdateResin}
           onDelete={handleDelete}

@@ -87,6 +87,7 @@ export interface Database {
           label: string
           is_done: boolean | null
           date: string
+          task_type: string
         }
         Insert: {
           id?: string
@@ -95,6 +96,7 @@ export interface Database {
           label: string
           is_done?: boolean | null
           date: string
+          task_type?: string
         }
         Update: {
           id?: string
@@ -103,6 +105,7 @@ export interface Database {
           label?: string
           is_done?: boolean | null
           date?: string
+          task_type?: string
         }
       }
       resin_history: {

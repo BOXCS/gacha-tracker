@@ -50,3 +50,29 @@ describe('getCurrentGameDate', () => {
     expect(getCurrentGameDate('genshin', date1)).toBe('2025-12-31')
   })
 })
+
+describe('getWeeklyResetDate', () => {
+  it('returns the Monday date when it is exactly Monday reset time', () => {
+    // 2023-10-09 is a Monday. 04:00 AM UTC+8 is Sunday 20:00:00Z
+    const d = new Date('2023-10-08T20:00:00Z')
+    expect(getWeeklyResetDate('genshin', d)).toBe('2023-10-09')
+  })
+
+  it('returns the Monday date when it is Wednesday', () => {
+    // 2023-10-11 is a Wednesday
+    const d = new Date('2023-10-11T04:00:00Z')
+    expect(getWeeklyResetDate('genshin', d)).toBe('2023-10-09')
+  })
+
+  it('returns the previous Monday date when it is Monday BEFORE reset time', () => {
+    // 2023-10-09 is Monday. 03:00 AM UTC+8 -> belongs to Sunday Oct 8, which belongs to previous Monday Oct 2
+    const d = new Date('2023-10-08T19:00:00Z')
+    expect(getWeeklyResetDate('genshin', d)).toBe('2023-10-02')
+  })
+
+  it('returns the previous Monday date when it is Sunday AFTER reset time', () => {
+    // 2023-10-08 is Sunday. 12:00 PM UTC+8. Game date is Oct 8. Monday is Oct 2.
+    const d = new Date('2023-10-08T04:00:00Z')
+    expect(getWeeklyResetDate('genshin', d)).toBe('2023-10-02')
+  })
+})
