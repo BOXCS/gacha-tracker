@@ -52,11 +52,7 @@ export const DOMAIN_SCHEDULE: Record<GameType, Record<number, DomainDay[]>> = {
   endfield: {}
 }
 
-const ALWAYS_AVAILABLE: DomainDay[] = [
-  { id: 'all_calyx', name: 'Semua Material (Selalu Tersedia)', type: 'talent', materials: ['Bisa di-farm setiap hari'], cost: 10 } // cost can be overridden per game, but it's just for display
-]
-
-// Fill non-rotating games with ALWAYS_AVAILABLE for all days
+// Fill non-rotating games with always available schedule
 const NON_ROTATING_GAMES: GameType[] = ['hsr', 'zzz', 'wuwa', 'nte', 'endfield']
 
 NON_ROTATING_GAMES.forEach(game => {
