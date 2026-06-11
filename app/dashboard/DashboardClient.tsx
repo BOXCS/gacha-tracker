@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { Zap, Plus, RefreshCw, X, Settings, LineChart as LineChartIcon, Calculator, Calendar } from 'lucide-react'
+import { Zap, Plus, RefreshCw, X, Settings, LineChart as LineChartIcon, Calculator, Calendar, Swords } from 'lucide-react'
 import { useAccounts } from '@/hooks/useAccounts'
 import { useTasks } from '@/hooks/useTasks'
 import { getCurrentGameDate, getWeeklyResetDate } from '@/lib/reset'
@@ -280,6 +280,14 @@ export function DashboardClient() {
             >
               <LineChartIcon className="h-4 w-4" aria-hidden="true" />
               <span className="hidden sm:inline">Riwayat</span>
+            </Link>
+            <Link
+              href="/teambuilder"
+              className="flex items-center gap-1.5 rounded-md bg-purple-500/10 border border-purple-500/20 px-3 py-1.5 text-sm font-medium text-purple-400 shadow-sm transition-colors hover:bg-purple-500/20"
+              aria-label="Team Builder"
+            >
+              <Swords className="h-4 w-4" aria-hidden="true" />
+              <span className="hidden sm:inline">Team</span>
             </Link>
             <motion.button
               onClick={() => setShowSettingsModal(true)}

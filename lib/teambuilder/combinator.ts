@@ -31,40 +31,55 @@ function getCombinations<T>(arr: T[], k: number): T[][] {
  * Peringatan: array ownedCharacters sebaiknya difilter terlebih dahulu (misal berdasarkan game)
  * agar ukuran tidak terlalu besar.
  */
-export function generateTeamCombinations(
+export async function generateTeamCombinations(
   ownedCharacters: Character[],
   contentType: ContentType,
-  teamSize: number = 4
-): ScoredTeam[] {
-  // Hanya proses jika memiliki cukup karakter
-  if (ownedCharacters.length < teamSize) return []
+  teamSize: number = 4,
+  onProgress?: (progress: number) => void
+): Promise<ScoredTeam[]> {
+  // Pre-filter: Utamakan karakter yang relevan dengan konten untuk memangkas kombinasi ekstrim
+  let pool = ownedCharacters.filter(c => 
+    c.recommendedFor.includes(contentType) || c.recommendedFor.includes('general')
+  )
+  // Fallback jika roster terlalu sempit
+  if (pool.length < teamSize) {
+    pool = ownedCharacters
+  }
+  if (pool.length < teamSize) return []
 
-  // Ambil ID karakter yang dimiliki untuk mempercepat lookup di scoring
   const ownedIds = new Set(ownedCharacters.map(c => c.id))
-
-  // 1. Generate semua raw combinations
-  const rawCombinations = getCombinations(ownedCharacters, teamSize)
-
-  // 2. Filter yang valid dan score sekaligus
+  const rawCombinations = getCombinations(pool, teamSize)
+  
   const scoredTeams: ScoredTeam[] = []
+  const CHUNK_SIZE = 5000 // Proses 5000 kombinasi per tick
+  
+  for (let i = 0; i < rawCombinations.length; i += CHUNK_SIZE) {
+    const chunk = rawCombinations.slice(i, i + CHUNK_SIZE)
+    
+    for (const team of chunk) {
+      if (isValidTeam(team, contentType)) {
+        const score = scoreTeam(team, contentType, ownedIds)
+        const category = categorizeTeam(team, score)
+        const reasonSummary = generateReasonSummary(team, score, category)
 
-  for (const team of rawCombinations) {
-    if (isValidTeam(team, contentType)) {
-      const score = scoreTeam(team, contentType, ownedIds)
-      const category = categorizeTeam(team, score)
-      const reasonSummary = generateReasonSummary(team, score, category)
-
-      scoredTeams.push({
-        characters: team,
-        score,
-        category,
-        reasonSummary
-      })
+        scoredTeams.push({
+          characters: team,
+          score,
+          category,
+          reasonSummary
+        })
+      }
     }
+    
+    if (onProgress) {
+      onProgress(Math.min(100, Math.round(((i + CHUNK_SIZE) / rawCombinations.length) * 100)))
+    }
+
+    // Yield back to main thread to prevent UI freezing
+    await new Promise(resolve => setTimeout(resolve, 0))
   }
 
-  // 3. Sort berdasarkan skor tertinggi
+  // Sort berdasarkan skor tertinggi
   scoredTeams.sort((a, b) => b.score.total - a.score.total)
-
   return scoredTeams
 }

@@ -67,12 +67,12 @@ describe('Rules Engine (Unit 3)', () => {
     expect(category).toBe('f2p')
   })
 
-  it('generateTeamCombinations: dapat menghasilkan daftar tim tanpa duplikat', () => {
+  it('generateTeamCombinations: dapat menghasilkan daftar tim tanpa duplikat', async () => {
     // 5 karakter: Hu Tao, Xingqiu, Zhongli, Yelan, Bennett
     // C(5, 4) = 5 kombinasi
     const roster = getTeam(['genshin_hu_tao', 'genshin_xingqiu', 'genshin_zhongli', 'genshin_yelan', 'genshin_bennett'])
     
-    const combinations = generateTeamCombinations(roster, 'spiral_abyss', 4)
+    const combinations = await generateTeamCombinations(roster, 'spiral_abyss', 4)
     // Semua kombinasi di atas valid karena semuanya punya setidaknya 1 DPS/SubDPS
     expect(combinations.length).toBe(5)
     
