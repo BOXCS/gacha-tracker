@@ -165,7 +165,7 @@ export function ContentSelector({
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="relative p-5 rounded-2xl border border-white/8 bg-white/[0.02] backdrop-blur-sm overflow-hidden"
+      className="relative p-5 rounded-2xl border border-white/8 bg-white/[0.02] backdrop-blur-sm"
     >
       {/* Gradient accent line at top */}
       <div className={cn(
