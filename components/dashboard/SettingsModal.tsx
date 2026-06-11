@@ -17,6 +17,19 @@ export function SettingsModal({ onClose }: SettingsModalProps) {
   const [dailyNotif, setDailyNotif] = useState(false)
   const [savingSettings, setSavingSettings] = useState(false)
   const [user, setUser] = useState<User | null>(null)
+  const [isBrave, setIsBrave] = useState(false)
+
+  useEffect(() => {
+    // Detect Brave browser — it blocks Google FCM push service
+    const detectBrave = async () => {
+      const nav = navigator as Navigator & { brave?: { isBrave?: () => Promise<boolean> } }
+      if (nav.brave?.isBrave) {
+        const result = await nav.brave.isBrave()
+        setIsBrave(result)
+      }
+    }
+    detectBrave()
+  }, [])
 
   useEffect(() => {
     async function loadSettings() {
@@ -106,6 +119,9 @@ export function SettingsModal({ onClose }: SettingsModalProps) {
               </div>
             </div>
             {isSupported ? (
+              isBrave ? (
+                <span className="text-xs text-[--state-danger] max-w-[140px] text-right">Tidak didukung di Brave</span>
+              ) : (
               <button
                 onClick={handleTogglePush}
                 disabled={pushLoading}
@@ -119,6 +135,7 @@ export function SettingsModal({ onClose }: SettingsModalProps) {
                   }`}
                 />
               </button>
+              )
             ) : (
               <span className="text-xs text-[--state-danger]">Tidak didukung browser</span>
             )}
