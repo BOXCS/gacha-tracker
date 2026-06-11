@@ -1,1 +1,1122 @@
-[]
+[
+  {
+    "id": "zzz_billy",
+    "name": "Billy",
+    "game": "zzz",
+    "element": "physical",
+    "role": "attack",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/99/Agent_Billy_Kid_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_corin",
+    "name": "Corin",
+    "game": "zzz",
+    "element": "physical",
+    "role": "attack",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e4/Agent_Corin_Wickes_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_neko_mata",
+    "name": "Neko­mata",
+    "game": "zzz",
+    "element": "physical",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d0/Agent_Nekomiya_Mana_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_ye_shun_guang",
+    "name": "Ye Shun­guang",
+    "game": "zzz",
+    "element": "honed edge",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/94/Agent_Ye_Shunguang_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_evelyn",
+    "name": "Evelyn",
+    "game": "zzz",
+    "element": "fire",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/17/Agent_Evelyn_Chevalier_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_orphie___magus",
+    "name": "Orphie & Magus",
+    "game": "zzz",
+    "element": "fire",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/6/63/Agent_Orphie_Magnusson_%26_Magus_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_soldier_11",
+    "name": "Soldier 11",
+    "game": "zzz",
+    "element": "fire",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/6/62/Agent_Soldier_11_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_ellen",
+    "name": "Ellen",
+    "game": "zzz",
+    "element": "ice",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/ed/Agent_Ellen_Joe_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_hugo",
+    "name": "Hugo",
+    "game": "zzz",
+    "element": "ice",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/99/Agent_Hugo_Vlad_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_anton",
+    "name": "Anton",
+    "game": "zzz",
+    "element": "electric",
+    "role": "attack",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/13/Agent_Anton_Ivanov_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_haru_masa",
+    "name": "Haru­masa",
+    "game": "zzz",
+    "element": "electric",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/fe/Agent_Asaba_Harumasa_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_cissia",
+    "name": "Cissia",
+    "game": "zzz",
+    "element": "electric",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/be/Agent_Cissia_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_seed",
+    "name": "Seed",
+    "game": "zzz",
+    "element": "electric",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/fb/Agent_Seed_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_anby",
+    "name": "Anby",
+    "game": "zzz",
+    "element": "electric",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/95/Agent_Soldier_0_-_Anby_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_pyrois",
+    "name": "Pyrois",
+    "game": "zzz",
+    "element": "ether",
+    "role": "attack",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/4b/Agent_Pyrois_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_zhu_yuan",
+    "name": "Zhu Yuan",
+    "game": "zzz",
+    "element": "ether",
+    "role": "attack",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/fb/Agent_Zhu_Yuan_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_dialyn",
+    "name": "Dialyn",
+    "game": "zzz",
+    "element": "physical",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Agent_Dialyn_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_pulchra",
+    "name": "Pulchra",
+    "game": "zzz",
+    "element": "physical",
+    "role": "stun",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/8/8c/Agent_Pulchra_Fellini_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_ju_fufu",
+    "name": "Ju Fufu",
+    "game": "zzz",
+    "element": "fire",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/4a/Agent_Ju_Fufu_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_koleda",
+    "name": "Koleda",
+    "game": "zzz",
+    "element": "fire",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a8/Agent_Koleda_Belobog_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_lighter",
+    "name": "Lighter",
+    "game": "zzz",
+    "element": "fire",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b5/Agent_Lighter_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_norma",
+    "name": "Norma",
+    "game": "zzz",
+    "element": "fire",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/18/Agent_Norma_Hollowell_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_lycaon",
+    "name": "Lycaon",
+    "game": "zzz",
+    "element": "ice",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/2f/Agent_Von_Lycaon_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_anby",
+    "name": "Anby",
+    "game": "zzz",
+    "element": "electric",
+    "role": "stun",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b1/Agent_Anby_Demara_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_qingyi",
+    "name": "Qingyi",
+    "game": "zzz",
+    "element": "electric",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Qingyi_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_trigger",
+    "name": "Trigger",
+    "game": "zzz",
+    "element": "electric",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/df/Agent_Trigger_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_nangong_yu",
+    "name": "Nangong Yu",
+    "game": "zzz",
+    "element": "ether",
+    "role": "stun",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a3/Agent_Nangong_Yu_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_alice",
+    "name": "Alice",
+    "game": "zzz",
+    "element": "physical",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7e/Agent_Alice_Thymefield_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_jane",
+    "name": "Jane",
+    "game": "zzz",
+    "element": "physical",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e7/Agent_Jane_Doe_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_piper",
+    "name": "Piper",
+    "game": "zzz",
+    "element": "physical",
+    "role": "anomaly",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/c/ca/Agent_Piper_Wheel_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_burnice",
+    "name": "Burnice",
+    "game": "zzz",
+    "element": "fire",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/f9/Agent_Burnice_White_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_promeia",
+    "name": "Promeia",
+    "game": "zzz",
+    "element": "ice",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/c/ce/Agent_Promeia_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_miyabi",
+    "name": "Miyabi",
+    "game": "zzz",
+    "element": "frost",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/94/Agent_Hoshimi_Miyabi_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_grace",
+    "name": "Grace",
+    "game": "zzz",
+    "element": "electric",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e6/Agent_Grace_Howard_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_yanagi",
+    "name": "Yanagi",
+    "game": "zzz",
+    "element": "electric",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/8/8c/Agent_Tsukishiro_Yanagi_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_aria",
+    "name": "Aria",
+    "game": "zzz",
+    "element": "ether",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/2d/Agent_Aria_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_vivian",
+    "name": "Vivian",
+    "game": "zzz",
+    "element": "ether",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d5/Agent_Vivian_Banshee_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_velina",
+    "name": "Velina",
+    "game": "zzz",
+    "element": "wind",
+    "role": "anomaly",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/fb/Agent_Velina_Airgid_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_sunna",
+    "name": "Sunna",
+    "game": "zzz",
+    "element": "physical",
+    "role": "support",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/0/0f/Agent_Sunna_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_yuzuha",
+    "name": "Yuzuha",
+    "game": "zzz",
+    "element": "physical",
+    "role": "support",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/fc/Agent_Ukinami_Yuzuha_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_lucy",
+    "name": "Lucy",
+    "game": "zzz",
+    "element": "fire",
+    "role": "support",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b8/Agent_Luciana_de_Montefio_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_soukaku",
+    "name": "Soukaku",
+    "game": "zzz",
+    "element": "ice",
+    "role": "support",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/8/89/Agent_Soukaku_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_rina",
+    "name": "Rina",
+    "game": "zzz",
+    "element": "electric",
+    "role": "support",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a8/Agent_Alexandrina_Sebastiane_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_astra_yao",
+    "name": "Astra Yao",
+    "game": "zzz",
+    "element": "ether",
+    "role": "support",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b8/Agent_Astra_Yao_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_lucia",
+    "name": "Lucia",
+    "game": "zzz",
+    "element": "ether",
+    "role": "support",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/ff/Agent_Lucia_Elowen_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_nicole",
+    "name": "Nicole",
+    "game": "zzz",
+    "element": "ether",
+    "role": "support",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/21/Agent_Nicole_Demara_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_caesar",
+    "name": "Caesar",
+    "game": "zzz",
+    "element": "physical",
+    "role": "defense",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/af/Agent_Caesar_King_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_pan_yinhu",
+    "name": "Pan Yinhu",
+    "game": "zzz",
+    "element": "physical",
+    "role": "defense",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/ab/Agent_Pan_Yinhu_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_ben",
+    "name": "Ben",
+    "game": "zzz",
+    "element": "fire",
+    "role": "defense",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/ba/Agent_Ben_Bigger_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_zhao",
+    "name": "Zhao",
+    "game": "zzz",
+    "element": "ice",
+    "role": "defense",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d4/Agent_Zhao_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_seth",
+    "name": "Seth",
+    "game": "zzz",
+    "element": "electric",
+    "role": "defense",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/6/6d/Agent_Seth_Lowell_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_billy",
+    "name": "Billy",
+    "game": "zzz",
+    "element": "physical",
+    "role": "rupture",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/59/Agent_Starlight_-_Billy_Kid_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_banyue",
+    "name": "Banyue",
+    "game": "zzz",
+    "element": "fire",
+    "role": "rupture",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/70/Agent_Banyue_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_manato",
+    "name": "Manato",
+    "game": "zzz",
+    "element": "fire",
+    "role": "rupture",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7c/Agent_Komano_Manato_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "zzz_yidhari",
+    "name": "Yidhari",
+    "game": "zzz",
+    "element": "ice",
+    "role": "rupture",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/6/6f/Agent_Yidhari_Murphy_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "zzz_yixuan",
+    "name": "Yixuan",
+    "game": "zzz",
+    "element": "auric ink",
+    "role": "rupture",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/zenless-zone-zero/images/f/f7/Agent_Yixuan_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  }
+]

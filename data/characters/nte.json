@@ -1,1 +1,762 @@
-[]
+[
+  {
+    "id": "nte_character",
+    "name": "Character",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/d/d8/Esper_zero_male_artwork.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_mint",
+    "name": "Mint",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/2/20/Mint_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_nanally",
+    "name": "Nanally",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/4/44/Nanally_-_Character_Showcase.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_sakiri",
+    "name": "Sakiri",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/3/32/Sakiri_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_fadia",
+    "name": "Fadia",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/6/68/Fadia_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_lacrimosa",
+    "name": "Lacrimosa",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/3/37/Lacrimosa_-_Character_Showcase.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_hotori",
+    "name": "Hotori",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/4/41/Hotori_in_game_Model.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_taygedo",
+    "name": "Taygedo",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/3/3f/Taygedo_-_Character_Showcase.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_esper_zero",
+    "name": "Esper Zero",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/c/c2/Esper_Zero_Male_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_shinku",
+    "name": "Shinku",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/0/05/Shinku_by_nte.jpeg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_iroi",
+    "name": "Iroi",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/7/7d/Iroi_by_nte.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_nitsa",
+    "name": "Nitsa",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/6/69/Nitsa.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_haniel",
+    "name": "Haniel",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/b/b9/Haniel_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_hathor",
+    "name": "Hathor",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/3/30/Hathor_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_lingko",
+    "name": "Lingko",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/e/ea/Lingko.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_elyms",
+    "name": "Elyms",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/4/4b/Elyms.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_edgar",
+    "name": "Edgar",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/1/1d/Edgar_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_daffodill",
+    "name": "Daffodill",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/a/af/Daffodill_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_baicang",
+    "name": "Baicang",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/5/5c/Baicang_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_chiz",
+    "name": "Chiz",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/2/21/Chiz_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_jiuyuan",
+    "name": "Jiuyuan",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/5/57/Jiuyuan_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_adler",
+    "name": "Adler",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/3/33/Adler_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_skia",
+    "name": "Skia",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/0/01/Skia_by_nte_1.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_exe",
+    "name": "Exe",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/c/c0/Exe_Screenshot.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_chaos__character_",
+    "name": "Chaos (Character)",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/1/1d/Chaos_drip.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_alphard",
+    "name": "Alphard",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/6/64/Alphard_CBT.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_black_bird",
+    "name": "Black Bird",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/4/4f/Black_Bird_CBT.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_akane",
+    "name": "Akane",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/0/0d/Akane_-_Covered_by_NTE.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_jenson",
+    "name": "Jenson",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/8/81/Jenson.webp",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_aurelia",
+    "name": "Aurelia",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/f/fd/Aurelia_-_Character_Promo.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_mismo",
+    "name": "Mismo",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/8/8e/Mismo.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_kenneth",
+    "name": "Kenneth",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/5/55/Kenneth.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_renee",
+    "name": "Renee",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/4/41/NPC_Renee.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_dolores",
+    "name": "Dolores",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/c/ca/NPC_Dolores.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_settyn",
+    "name": "Settyn",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/f/f4/Fishingspecial-005.webp",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_illica",
+    "name": "Illica",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/b/ba/Illica.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_otro",
+    "name": "Otro",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/0/04/Otro.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "nte_inanna",
+    "name": "Inanna",
+    "game": "nte",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/neverness-to-everness/images/0/0b/Innana.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  }
+]

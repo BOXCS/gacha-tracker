@@ -1,1 +1,1761 @@
-[]
+[
+  {
+    "id": "hsr_acheron",
+    "name": "Acheron",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/24/Character_Acheron_Icon.png",
+    "synergies": [
+      "hsr_mortenax_blade",
+      "hsr_cipher",
+      "hsr_jiaoqiu",
+      "hsr_silver_wolf",
+      "hsr_pela",
+      "hsr_tribbie",
+      "hsr_hysilens",
+      "hsr_hyacine",
+      "hsr_dan_heng___permansor_terrae",
+      "hsr_herta",
+      "hsr_black_swan",
+      "hsr_sparkle",
+      "hsr_gallagher",
+      "hsr_kafka",
+      "hsr_cyrene"
+    ],
+    "recommendedFor": [
+      "MOC",
+      "PF"
+    ],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_aglaea",
+    "name": "Aglaea",
+    "game": "hsr",
+    "element": "",
+    "role": "remembrance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f8/Character_Aglaea_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_anaxa",
+    "name": "Anaxa",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f0/Character_Anaxa_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_archer",
+    "name": "Archer",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8f/Character_Archer_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_argenti",
+    "name": "Argenti",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c0/Character_Argenti_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_arlan",
+    "name": "Arlan",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a9/Character_Arlan_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_ashveil",
+    "name": "Ashveil",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/88/Character_Ashveil_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_asta",
+    "name": "Asta",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9f/Character_Asta_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_aventurine",
+    "name": "Aventurine",
+    "game": "hsr",
+    "element": "",
+    "role": "preservation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/da/Character_Aventurine_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_bailu",
+    "name": "Bailu",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/47/Character_Bailu_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_black_swan",
+    "name": "Black Swan",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/90/Character_Black_Swan_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_blade",
+    "name": "Blade",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/90/Character_Blade_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_boothill",
+    "name": "Boothill",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Boothill_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_bronya",
+    "name": "Bronya",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/0/0f/Character_Bronya_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_castorice",
+    "name": "Castorice",
+    "game": "hsr",
+    "element": "",
+    "role": "remembrance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/da/Character_Castorice_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_cerydra",
+    "name": "Cerydra",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c9/Character_Cerydra_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_cipher",
+    "name": "Cipher",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Cipher_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_clara",
+    "name": "Clara",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a4/Character_Clara_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_cyrene",
+    "name": "Cyrene",
+    "game": "hsr",
+    "element": "",
+    "role": "remembrance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Cyrene_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_dan_heng",
+    "name": "Dan Heng",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/1a/Character_Dan_Heng_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_dan_heng___imbibitor_lunae",
+    "name": "Dan Heng • Imbibitor Lunae",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2a/Character_Dan_Heng_%E2%80%A2_Imbibitor_Lunae_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_dan_heng___permansor_terrae",
+    "name": "Dan Heng • Permansor Terrae",
+    "game": "hsr",
+    "element": "",
+    "role": "preservation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fc/Character_Dan_Heng_%E2%80%A2_Permansor_Terrae_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_dr__ratio",
+    "name": "Dr. Ratio",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/47/Character_Dr._Ratio_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_evanescia",
+    "name": "Evanescia",
+    "game": "hsr",
+    "element": "",
+    "role": "elation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c3/Character_Evanescia_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_evernight",
+    "name": "Evernight",
+    "game": "hsr",
+    "element": "",
+    "role": "remembrance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/b/b7/Character_Evernight_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_feixiao",
+    "name": "Feixiao",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/75/Character_Feixiao_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_firefly",
+    "name": "Firefly",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9e/Character_Firefly_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_fu_xuan",
+    "name": "Fu Xuan",
+    "game": "hsr",
+    "element": "",
+    "role": "preservation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/1a/Character_Fu_Xuan_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_fugue",
+    "name": "Fugue",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c0/Character_Fugue_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_gallagher",
+    "name": "Gallagher",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/12/Character_Gallagher_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_gepard",
+    "name": "Gepard",
+    "game": "hsr",
+    "element": "",
+    "role": "preservation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/75/Character_Gepard_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_guinaifen",
+    "name": "Guinaifen",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/98/Character_Guinaifen_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_hanya",
+    "name": "Hanya",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Hanya_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_herta",
+    "name": "Herta",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bf/Character_Herta_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_himeko",
+    "name": "Himeko",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/0/00/Character_Himeko_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_hook",
+    "name": "Hook",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d5/Character_Hook_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_huohuo",
+    "name": "Huohuo",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/6/68/Character_Huohuo_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_hyacine",
+    "name": "Hyacine",
+    "game": "hsr",
+    "element": "",
+    "role": "remembrance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c0/Character_Hyacine_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_hysilens",
+    "name": "Hysilens",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/19/Character_Hysilens_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_jade",
+    "name": "Jade",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fd/Character_Jade_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_jiaoqiu",
+    "name": "Jiaoqiu",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/48/Character_Jiaoqiu_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_jing_yuan",
+    "name": "Jing Yuan",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/88/Character_Jing_Yuan_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_jingliu",
+    "name": "Jingliu",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f9/Character_Jingliu_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_kafka",
+    "name": "Kafka",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8c/Character_Kafka_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_lingsha",
+    "name": "Lingsha",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/a/ab/Character_Lingsha_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_luka",
+    "name": "Luka",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c7/Character_Luka_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_luocha",
+    "name": "Luocha",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/20/Character_Luocha_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_lynx",
+    "name": "Lynx",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6c/Character_Lynx_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_march_7th",
+    "name": "March 7th",
+    "game": "hsr",
+    "element": "",
+    "role": "preservation",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d3/Character_March_7th_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_march_7th",
+    "name": "March 7th",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7b/Character_March_7th_%28The_Hunt%29_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_misha",
+    "name": "Misha",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/4d/Character_Misha_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_mortenax_blade",
+    "name": "Mortenax Blade",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/4a/Character_Mortenax_Blade_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_moze",
+    "name": "Moze",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/25/Character_Moze_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_mydei",
+    "name": "Mydei",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Mydei_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_natasha",
+    "name": "Natasha",
+    "game": "hsr",
+    "element": "",
+    "role": "abundance",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/6/61/Character_Natasha_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_pela",
+    "name": "Pela",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c2/Character_Pela_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_phainon",
+    "name": "Phainon",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ef/Character_Phainon_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_qingque",
+    "name": "Qingque",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2e/Character_Qingque_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_rappa",
+    "name": "Rappa",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/84/Character_Rappa_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_robin",
+    "name": "Robin",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/72/Character_Robin_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_ruan_mei",
+    "name": "Ruan Mei",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/16/Character_Ruan_Mei_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_saber",
+    "name": "Saber",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/43/Character_Saber_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_sampo",
+    "name": "Sampo",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/5/53/Character_Sampo_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_seele",
+    "name": "Seele",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9a/Character_Seele_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_serval",
+    "name": "Serval",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7c/Character_Serval_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_silver_wolf",
+    "name": "Silver Wolf",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a3/Character_Silver_Wolf_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_silver_wolf_lv_999",
+    "name": "Silver Wolf LV.999",
+    "game": "hsr",
+    "element": "",
+    "role": "elation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/0/03/Character_Silver_Wolf_LV.999_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_sparkle",
+    "name": "Sparkle",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6b/Character_Sparkle_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_sparxie",
+    "name": "Sparxie",
+    "game": "hsr",
+    "element": "",
+    "role": "elation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/46/Character_Sparxie_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_sunday",
+    "name": "Sunday",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/38/Character_Sunday_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_sushang",
+    "name": "Sushang",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/97/Character_Sushang_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_the_dahlia",
+    "name": "The Dahlia",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/71/Character_The_Dahlia_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_the_herta",
+    "name": "The Herta",
+    "game": "hsr",
+    "element": "",
+    "role": "erudition",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/39/Character_The_Herta_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_tingyun",
+    "name": "Tingyun",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/4f/Character_Tingyun_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_topaz___numby",
+    "name": "Topaz & Numby",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Topaz_%26_Numby_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_trailblazer",
+    "name": "Trailblazer",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Trailblazer_%28Destruction%29_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_trailblazer",
+    "name": "Trailblazer",
+    "game": "hsr",
+    "element": "",
+    "role": "preservation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c3/Character_Trailblazer_%28Preservation%29_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_trailblazer",
+    "name": "Trailblazer",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fd/Character_Trailblazer_%28Harmony%29_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_trailblazer",
+    "name": "Trailblazer",
+    "game": "hsr",
+    "element": "",
+    "role": "remembrance",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/43/Character_Trailblazer_%28Remembrance%29_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_trailblazer",
+    "name": "Trailblazer",
+    "game": "hsr",
+    "element": "",
+    "role": "elation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/7/76/Character_Trailblazer_%28Elation%29_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_tribbie",
+    "name": "Tribbie",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Character_Tribbie_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_welt",
+    "name": "Welt",
+    "game": "hsr",
+    "element": "",
+    "role": "nihility",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/11/Character_Welt_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_xueyi",
+    "name": "Xueyi",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/23/Character_Xueyi_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_yanqing",
+    "name": "Yanqing",
+    "game": "hsr",
+    "element": "",
+    "role": "the hunt",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/5/57/Character_Yanqing_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_yao_guang",
+    "name": "Yao Guang",
+    "game": "hsr",
+    "element": "",
+    "role": "elation",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/1/1e/Character_Yao_Guang_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "hsr_yukong",
+    "name": "Yukong",
+    "game": "hsr",
+    "element": "",
+    "role": "harmony",
+    "rarity": 4,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/32/Character_Yukong_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "hsr_yunli",
+    "name": "Yunli",
+    "game": "hsr",
+    "element": "",
+    "role": "destruction",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/43/Character_Yunli_Icon.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  }
+]

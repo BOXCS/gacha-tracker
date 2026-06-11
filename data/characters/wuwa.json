@@ -1,1 +1,1022 @@
-[]
+[
+  {
+    "id": "wuwa_rover",
+    "name": "Rover",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/7/70/Rover_1.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_chixia",
+    "name": "Chixia",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/d/da/Chixia_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_yangyang",
+    "name": "Yangyang",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a7/Yangyang_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_encore",
+    "name": "Encore",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/6/6c/Encore_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_jiyan",
+    "name": "Jiyan",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/0/0d/Jiyan_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_danjin",
+    "name": "Danjin",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/3/3e/Danjin_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_yinlin",
+    "name": "Yinlin",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/3/33/Yinlin_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_taoqi",
+    "name": "Taoqi",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/a/ae/Taoqi_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_aalto",
+    "name": "Aalto",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/6/65/Aalto_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_sanhua",
+    "name": "Sanhua",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/5/5d/Sanhua_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_yuanwu",
+    "name": "Yuanwu",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/5/53/Yuanwu_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_mortefi",
+    "name": "Mortefi",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8e/Mortefi_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_camellya",
+    "name": "Camellya",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8f/Camellya_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_verina",
+    "name": "Verina",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/7/7c/Verina%27s_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_baizhi",
+    "name": "Baizhi",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ed/Baizhi_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_lingyang",
+    "name": "Lingyang",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/9/98/Lingyang_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_calcharo",
+    "name": "Calcharo",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e5/Calcharo_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_jianxin",
+    "name": "Jianxin",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8a/Jianxin_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_jinhsi",
+    "name": "Jinhsi",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a9/Jinhsi_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_phrolova",
+    "name": "Phrolova",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/0/0b/Phrolova_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_changli",
+    "name": "Changli",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Changli_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_xiangli_yao",
+    "name": "Xiangli Yao",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e9/Xiangli_Yao_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_zhezhi",
+    "name": "Zhezhi",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f0/Zhezhi_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_shorekeeper",
+    "name": "Shorekeeper",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/8/85/Shorekeeper_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_youhu",
+    "name": "Youhu",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b6/Youhu_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_lumi",
+    "name": "Lumi",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ee/Lumi_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_phoebe",
+    "name": "Phoebe",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/5/54/Phoebe_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_brant",
+    "name": "Brant",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/2/2d/Brant_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_roccia",
+    "name": "Roccia",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ea/Roccia_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_carlotta",
+    "name": "Carlotta",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8a/Carlotta_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_zani",
+    "name": "Zani",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/d/df/Zani_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_cartethyia",
+    "name": "Cartethyia",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d5/Cartethyia_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_cantarella",
+    "name": "Cantarella",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/0/01/Cantarella_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_ciaccona",
+    "name": "Ciaccona",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/6/68/Ciaccona_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_lupa",
+    "name": "Lupa",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e4/Lupa_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_chisa",
+    "name": "Chisa",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/c/ca/Chisa_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_qiuyuan",
+    "name": "Qiuyuan",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/1/17/Qiuyuan_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_galbrena",
+    "name": "Galbrena",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/9/9d/Galbrena_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_iuno",
+    "name": "Iuno",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1f/Iuno_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_augusta",
+    "name": "Augusta",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/3/39/Augusta_Card.png",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_buling",
+    "name": "Buling",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/5/58/Buling_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_mornye",
+    "name": "Mornye",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/e/eb/Mornye_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_sigrika",
+    "name": "Sigrika",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f6/Sigrika_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_lynae",
+    "name": "Lynae",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/7/71/Lynae_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_luuk_herssen",
+    "name": "Luuk Herssen",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/f/fe/Luuk_Herssen_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_lucilla",
+    "name": "Lucilla",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/5/51/Lucilla_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_aemeath",
+    "name": "Aemeath",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/f/fc/Aemeath_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_denia",
+    "name": "Denia",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b2/Denia_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_hiyuki",
+    "name": "Hiyuki",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/d/dc/Hiyuki_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_lucy",
+    "name": "Lucy",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/3/32/Lucy_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "wuwa_rebecca",
+    "name": "Rebecca",
+    "game": "wuwa",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c5/Rebecca_Card.jpg",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  }
+]

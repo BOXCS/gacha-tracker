@@ -1,1 +1,562 @@
-[]
+[
+  {
+    "id": "endfield_gilberta",
+    "name": "Gilberta",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_chen_qianyu",
+    "name": "Chen Qianyu",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_avywenna",
+    "name": "Avywenna",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_ember",
+    "name": "Ember",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_xaihi",
+    "name": "Xaihi",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_wulfgard",
+    "name": "Wulfgard",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_perlica",
+    "name": "Perlica",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_endministrator",
+    "name": "Endministrator",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_lifeng",
+    "name": "Lifeng",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_laevatain",
+    "name": "Laevatain",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_yvonne",
+    "name": "Yvonne",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_arclight",
+    "name": "Arclight",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_da_pan",
+    "name": "Da Pan",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_snowshine",
+    "name": "Snowshine",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_ardelia",
+    "name": "Ardelia",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_last_rite",
+    "name": "Last Rite",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_pogranichnik",
+    "name": "Pogranichnik",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_alesh",
+    "name": "Alesh",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_akekuri",
+    "name": "Akekuri",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_estella",
+    "name": "Estella",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_catcher",
+    "name": "Catcher",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_antal",
+    "name": "Antal",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_fluorite",
+    "name": "Fluorite",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_tangtang",
+    "name": "Tangtang",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_rossi",
+    "name": "Rossi",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_mi_fu",
+    "name": "Mi Fu",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_zhuang_fangyi",
+    "name": "Zhuang Fangyi",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": "endfield_camille",
+    "name": "Camille",
+    "game": "endfield",
+    "element": "Unknown",
+    "role": "Unknown",
+    "rarity": 5,
+    "imageUrl": "",
+    "synergies": [],
+    "recommendedFor": [],
+    "tags": [],
+    "constellationWeights": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  }
+]
