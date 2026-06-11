@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { ChevronLeft, Save, Trash2, RefreshCw, Edit2 } from 'lucide-react'
+import Link from 'next/link'
+import { ChevronLeft, Save, Trash2, RefreshCw, Edit2, Users } from 'lucide-react'
 import { useAccounts } from '@/hooks/useAccounts'
 import { useTasks } from '@/hooks/useTasks'
 import { getCurrentGameDate, getWeeklyResetDate } from '@/lib/reset'
@@ -17,6 +19,7 @@ import { computeResin, computeSecondsToFull, computeResinPercent, getResinStatus
 import { cn } from '@/lib/utils'
 import { UpdateResinDialog } from '@/components/resin/UpdateResinDialog'
 import { toast } from 'sonner'
+import { Button } from '@/components/ui/button'
 
 interface Props { accountId: string }
 
@@ -212,6 +215,27 @@ export function AccountDetailClient({ accountId }: Props) {
                   onToggle={toggleTask}
                 />
               </section>
+            </div>
+          </motion.section>
+
+          {/* Roster Section */}
+          <motion.section 
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+            className="rounded-2xl border border-[--border-default] bg-[--bg-surface] p-6 shadow-sm"
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <h3 className="text-lg font-bold text-[--text-primary]">Roster Karakter</h3>
+                <p className="text-sm text-[--text-muted] mt-1">Kelola daftar karakter yang Anda miliki untuk rekomendasi tim.</p>
+              </div>
+              <Link href={`/roster?accountId=${account.id}`}>
+                <Button className="gap-2 w-full sm:w-auto">
+                  <Users className="w-4 h-4" />
+                  Kelola Roster
+                </Button>
+              </Link>
             </div>
           </motion.section>
 
