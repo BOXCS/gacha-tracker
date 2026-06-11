@@ -93,7 +93,7 @@ export function AccountDetailClient({ accountId }: Props) {
     try {
       await updateResin(accountId, newResin, newSecondary)
       toast.success('Resin berhasil diupdate')
-    } catch (error) {
+    } catch {
       toast.error('Gagal mengupdate resin')
     }
   }
