@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { Zap, Plus, RefreshCw, X, Settings, LineChart as LineChartIcon } from 'lucide-react'
+import { Zap, Plus, RefreshCw, X, Settings, LineChart as LineChartIcon, Calculator } from 'lucide-react'
 import { useAccounts } from '@/hooks/useAccounts'
 import { useTasks } from '@/hooks/useTasks'
 import { getCurrentGameDate, getWeeklyResetDate } from '@/lib/reset'
@@ -257,6 +257,14 @@ export function DashboardClient() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            <Link
+              href="/calculator"
+              className="flex items-center gap-1.5 rounded-md bg-[--bg-surface-raised] border border-[--border-default] px-3 py-1.5 text-sm font-medium text-[--text-primary] shadow-sm transition-colors hover:bg-[--bg-surface-elevated]"
+              aria-label="Kalkulator Resin"
+            >
+              <Calculator className="h-4 w-4" aria-hidden="true" />
+              <span className="hidden sm:inline">Kalkulator</span>
+            </Link>
             <Link
               href="/history"
               className="flex items-center gap-1.5 rounded-md bg-[--bg-surface-raised] border border-[--border-default] px-3 py-1.5 text-sm font-medium text-[--text-primary] shadow-sm transition-colors hover:bg-[--bg-surface-elevated]"
