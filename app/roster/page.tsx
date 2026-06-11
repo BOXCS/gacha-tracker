@@ -1,4 +1,6 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
+import { Loader2 } from 'lucide-react'
 import RosterClient from './RosterClient'
 
 export const metadata: Metadata = {
@@ -19,7 +21,9 @@ export default function RosterPage() {
         </p>
       </div>
 
-      <RosterClient />
+      <Suspense fallback={<div className="flex justify-center py-24"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>}>
+        <RosterClient />
+      </Suspense>
     </div>
   )
 }

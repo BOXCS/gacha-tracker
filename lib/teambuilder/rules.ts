@@ -1,14 +1,16 @@
 import type { Character, ContentType, TeamScore } from './types'
 
 // Konstanta batas ukuran tim per game (saat ini di-hardcode)
-export function getRequiredTeamSize(gameType: string): number {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function getRequiredTeamSize(_gameType: string): number {
   return 4 // Genshin, HSR, ZZZ, Wuwa mayoritas menggunakan tim berisi 4 atau 3. Untuk MVP, asumsikan Genshin (4).
 }
 
 /**
  * Validasi apakah kombinasi karakter membentuk tim yang valid
  */
-export function isValidTeam(team: Character[], contentType: ContentType): boolean {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function isValidTeam(team: Character[], _contentType: ContentType): boolean {
   if (team.length === 0) return false
 
   // Minimal ada 1 DPS atau Sub DPS untuk memastikan tim punya damage dealer
@@ -28,7 +30,8 @@ export function isValidTeam(team: Character[], contentType: ContentType): boolea
 export function scoreTeam(
   team: Character[],
   contentType: ContentType,
-  ownedIds: Set<string>
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  _ownedIds: Set<string>
 ): TeamScore {
   let synergyScore = 0
   let coverageScore = 0

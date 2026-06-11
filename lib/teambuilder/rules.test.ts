@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { isValidTeam, scoreTeam } from './rules'
 import { categorizeTeam } from './categorizer'
 import { generateTeamCombinations } from './combinator'
-import { ALL_CHARACTERS, getCharacterById } from '../../data/characters/index'
+import { getCharacterById } from '../../data/characters/index'
 import type { Character } from './types'
 
 describe('Rules Engine (Unit 3)', () => {
@@ -12,7 +12,6 @@ describe('Rules Engine (Unit 3)', () => {
   }
 
   it('isValidTeam: menolak tim tanpa damage dealer', () => {
-    const team = getTeam(['genshin_zhongli', 'genshin_bennett', 'genshin_kazuha', 'genshin_furina'])
     // Furina = sub_dps, jadi ini valid! Mari kita ubah agar tidak valid.
     // Jika Furina adalah sub_dps, maka ada damage dealer.
     const teamNoDps = [

@@ -45,9 +45,9 @@ export async function GET(request: Request) {
     if (error) throw error
 
     return NextResponse.json(roster)
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Failed to fetch roster:', error)
-    return NextResponse.json({ error: error.message || 'Failed to fetch roster' }, { status: 500 })
+    return NextResponse.json({ error: error instanceof Error ? error.message : 'Failed to fetch roster' }, { status: 500 })
   }
 }
 
@@ -92,11 +92,11 @@ export async function POST(request: Request) {
     if (error) throw error
 
     return NextResponse.json(data)
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Failed to update roster:', error)
     if (error instanceof z.ZodError) {
       return NextResponse.json({ error: 'Invalid data format' }, { status: 400 })
     }
-    return NextResponse.json({ error: error.message || 'Failed to update roster' }, { status: 500 })
+    return NextResponse.json({ error: error instanceof Error ? error.message : 'Failed to update roster' }, { status: 500 })
   }
 }

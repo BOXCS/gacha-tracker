@@ -131,6 +131,32 @@ export interface Database {
           recorded_at?: string | null
         }
       }
+      user_roster: {
+        Row: {
+          id: string
+          account_id: string
+          character_id: string
+          owned: boolean
+          constellation: number
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          account_id: string
+          character_id: string
+          owned?: boolean
+          constellation?: number
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          account_id?: string
+          character_id?: string
+          owned?: boolean
+          constellation?: number
+          created_at?: string
+        }
+      }
     }
     Views: {
       [_ in never]: never

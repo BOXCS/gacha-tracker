@@ -53,7 +53,7 @@ export default function RosterClient() {
         >
           {accounts.map(acc => (
             <option key={acc.id} value={acc.id}>
-              {acc.game_type.toUpperCase()} - UID: {acc.uid}
+              {acc.game_type.toUpperCase()} - {acc.nickname}
             </option>
           ))}
         </select>

@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from 'react'
 import type { Character } from '@/lib/teambuilder/types'
 import { CharacterCard } from './CharacterCard'
-import { Input } from '@/components/ui/input'
 import { Search } from 'lucide-react'
 import type { Database } from '@/supabase/types'
 
@@ -68,11 +67,12 @@ export function CharacterGrid({ characters, roster, onUpdateCharacter }: Charact
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <Input 
+          <input 
+            type="text"
             placeholder="Cari karakter..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-9 bg-card/50"
+            className="flex h-10 w-full rounded-md border border-input bg-card/50 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 pl-9"
           />
         </div>
         
