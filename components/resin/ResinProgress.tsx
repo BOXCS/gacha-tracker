@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import type { ResinStatus } from '@/lib/resin'
+import { ResinInlineEdit } from './ResinInlineEdit'
 
 interface ResinProgressProps {
   /** Current resin value (already computed from computeResin) */
@@ -12,6 +13,8 @@ interface ResinProgressProps {
   /** Whether to show the numeric label above the bar */
   showLabel?: boolean
   className?: string
+  /** Callback when resin is updated inline */
+  onUpdate?: (newValue: number) => Promise<void>
 }
 
 const STATUS_BAR_CLASS: Record<ResinStatus, string> = {
@@ -32,6 +35,7 @@ export function ResinProgress({
   status,
   showLabel = true,
   className,
+  onUpdate,
 }: ResinProgressProps) {
   const percent = Math.min((current / max) * 100, 100)
 
@@ -39,8 +43,13 @@ export function ResinProgress({
     <div className={cn('w-full', className)}>
       {showLabel && (
         <div className="mb-1.5 flex items-baseline justify-between">
-          <span className={cn('font-mono text-lg font-bold leading-none', STATUS_TEXT_CLASS[status])}>
-            {current}
+          <span className={cn('font-mono text-lg font-bold leading-none flex items-center', STATUS_TEXT_CLASS[status])}>
+            <ResinInlineEdit 
+              current={current} 
+              max={max} 
+              onUpdate={onUpdate} 
+              textClassName={STATUS_TEXT_CLASS[status]}
+            />
             <span className="ml-0.5 text-sm font-normal text-[--text-muted]">/{max}</span>
           </span>
           <span className="font-mono text-xs text-[--text-muted]">

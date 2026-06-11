@@ -63,6 +63,40 @@ export function useAccounts() {
     return json.data as GameAccount
   }
 
+  const updateResin = async (id: string, currentResin?: number, secondaryResin?: number) => {
+    // Optimistic update
+    if (data) {
+      const now = new Date().toISOString()
+      const updatedData = data.map(account => {
+        if (account.id === id) {
+          return {
+            ...account,
+            ...(currentResin !== undefined && { current_resin: currentResin, last_updated_at: now }),
+            ...(secondaryResin !== undefined && { secondary_resin: secondaryResin, secondary_updated_at: now })
+          }
+        }
+        return account
+      })
+      await mutate(updatedData, false)
+    }
+
+    const payload: Record<string, number> = {}
+    if (currentResin !== undefined) payload.currentResin = currentResin
+    if (secondaryResin !== undefined) payload.secondaryResin = secondaryResin
+
+    const res = await fetch(`/api/accounts/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+    const json = await res.json()
+    if (json.status === 'error') {
+      await mutate() // revert if error
+      throw new Error(json.message)
+    }
+    await mutate()
+  }
+
   const deleteAccount = async (id: string) => {
     const res = await fetch(`/api/accounts/${id}`, {
       method: 'DELETE',
@@ -106,6 +140,7 @@ export function useAccounts() {
     error,
     addAccount,
     updateAccount,
+    updateResin,
     deleteAccount,
     reorderAccounts,
   }

@@ -62,6 +62,19 @@ describe('computeResin', () => {
     const lastUpdatedAt = timestampSecondsAgo(now, 1000)
     expect(computeResin(160, 160, lastUpdatedAt, 480, now)).toBe(160)
   })
+
+  it('mengupdate base resin dengan benar saat dikurangi secara manual', () => {
+    const now = new Date()
+    // Simulasi: User menghabiskan resin secara manual, mengubah currentResin jadi 20.
+    // lastUpdatedAt direset ke "sekarang" (0 detik berlalu)
+    const lastUpdatedAt = timestampSecondsAgo(now, 0)
+    // 0 detik berlalu = tidak ada resin tambahan
+    expect(computeResin(20, 160, lastUpdatedAt, 480, now)).toBe(20)
+
+    // Simulasi 1 siklus berlalu setelah dikurangi
+    const lastUpdatedAt1Cycle = timestampSecondsAgo(now, 480)
+    expect(computeResin(20, 160, lastUpdatedAt1Cycle, 480, now)).toBe(21)
+  })
 })
 
 // ─── computeSecondsToFull ─────────────────────────────────────────────────────

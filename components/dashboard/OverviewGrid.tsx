@@ -12,12 +12,13 @@ import type { DailyTask } from '@/hooks/useTasks'
 interface OverviewGridProps {
   accounts: GameAccount[]
   isLoading: boolean
-  tasks: DailyTask[]
-  onUpdate?: (id: string, currentResin: number) => void
-  onDelete?: (id: string) => void
+  tasks?: DailyTask[]
+  onUpdate: (id: string, currentResin: number) => void
+  onInlineUpdate?: (id: string, currentResin?: number, secondaryResin?: number) => Promise<void>
+  onDelete: (id: string) => void
   onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean) => void
-  onReorder?: (updates: { id: string; sort_order: number }[]) => void
-  onAddClick?: () => void
+  onReorder: (updates: { id: string; sort_order: number }[]) => void
+  onAddClick: () => void
 }
 
 /** Stagger container — children animate in cascading sequence */
@@ -90,12 +91,13 @@ interface SortableResinCardProps {
   account: GameAccount
   index: number
   tasks: DailyTask[]
-  onUpdate?: (id: string, currentResin: number) => void
-  onDelete?: (id: string) => void
+  onUpdate: (id: string, currentResin: number) => void
+  onInlineUpdate?: (id: string, currentResin?: number, secondaryResin?: number) => Promise<void>
+  onDelete: (id: string) => void
   onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean) => void
 }
 
-function SortableResinCard({ account, index, tasks, onUpdate, onDelete, onToggleTask }: SortableResinCardProps) {
+function SortableResinCard({ account, index, tasks, onUpdate, onInlineUpdate, onDelete, onToggleTask }: SortableResinCardProps) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: account.id })
 
   const style = {
@@ -112,6 +114,7 @@ function SortableResinCard({ account, index, tasks, onUpdate, onDelete, onToggle
         delay={isDragging ? 0 : index * 0.08}
         tasks={tasks}
         onUpdate={onUpdate}
+        onInlineUpdate={onInlineUpdate}
         onDelete={onDelete}
         onToggleTask={onToggleTask}
         dragHandleProps={{ ...attributes, ...listeners }}
@@ -120,7 +123,17 @@ function SortableResinCard({ account, index, tasks, onUpdate, onDelete, onToggle
   )
 }
 
-export function OverviewGrid({ accounts, isLoading, tasks, onUpdate, onDelete, onToggleTask, onReorder, onAddClick }: OverviewGridProps) {
+export function OverviewGrid({ 
+  accounts, 
+  isLoading, 
+  tasks = [], 
+  onUpdate, 
+  onInlineUpdate, 
+  onDelete, 
+  onToggleTask, 
+  onReorder, 
+  onAddClick 
+}: OverviewGridProps) {
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
@@ -175,6 +188,7 @@ export function OverviewGrid({ accounts, isLoading, tasks, onUpdate, onDelete, o
               index={index}
               tasks={tasks.filter((t) => t.account_id === account.id)}
               onUpdate={onUpdate}
+              onInlineUpdate={onInlineUpdate}
               onDelete={onDelete}
               onToggleTask={onToggleTask}
             />

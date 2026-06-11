@@ -22,6 +22,7 @@ interface ResinCardProps {
   account: GameAccount
   tasks?: DailyTask[]
   onUpdate?: (id: string, currentResin: number) => void
+  onInlineUpdate?: (id: string, currentResin?: number, secondaryResin?: number) => Promise<void>
   onDelete?: (id: string) => void
   onToggleTask?: (accountId: string, taskKey: string, label: string, isDone: boolean) => void
   dragHandleProps?: Record<string, unknown>
@@ -51,7 +52,7 @@ function useMagneticHover(strength = 6) {
   return { springX, springY, handleMouseMove, handleMouseLeave }
 }
 
-export function ResinCard({ account, tasks = [], onUpdate, onDelete, onToggleTask, dragHandleProps, delay = 0 }: ResinCardProps) {
+export function ResinCard({ account, tasks = [], onUpdate, onInlineUpdate, onDelete, onToggleTask, dragHandleProps, delay = 0 }: ResinCardProps) {
   const config = getGameConfig(account.game_type)
 
   const now = new Date()
@@ -181,6 +182,7 @@ export function ResinCard({ account, tasks = [], onUpdate, onDelete, onToggleTas
           max={account.max_resin}
           status={status}
           showLabel
+          onUpdate={onInlineUpdate ? async (val) => onInlineUpdate(account.id, val, undefined) : undefined}
         />
       </div>
 
@@ -199,6 +201,7 @@ export function ResinCard({ account, tasks = [], onUpdate, onDelete, onToggleTas
               status={secondaryStatus}
               showLabel
               className="h-1.5"
+              onUpdate={onInlineUpdate ? async (val) => onInlineUpdate(account.id, undefined, val) : undefined}
             />
           </div>
         </>

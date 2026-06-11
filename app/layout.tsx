@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { InstallAppPrompt } from "@/components/dashboard/InstallAppPrompt";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
@@ -30,6 +31,7 @@ export default function RootLayout({
         >
           {children}
           <InstallAppPrompt />
+          <Toaster position="top-center" />
         </ThemeProvider>
       </body>
     </html>

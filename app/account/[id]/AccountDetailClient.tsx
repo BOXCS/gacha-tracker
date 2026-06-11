@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { ChevronLeft, Save, Trash2, RefreshCw } from 'lucide-react'
+import { ChevronLeft, Save, Trash2, RefreshCw, Edit2 } from 'lucide-react'
 import { useAccounts } from '@/hooks/useAccounts'
 import { useTasks } from '@/hooks/useTasks'
 import { getCurrentGameDate } from '@/lib/reset'
@@ -14,12 +14,14 @@ import { CountdownTimer } from '@/components/resin/CountdownTimer'
 import { DailyChecklist } from '@/components/checklist/DailyChecklist'
 import { computeResin, computeSecondsToFull, computeResinPercent, getResinStatus } from '@/lib/resin'
 import { cn } from '@/lib/utils'
+import { UpdateResinDialog } from '@/components/resin/UpdateResinDialog'
+import { toast } from 'sonner'
 
 interface Props { accountId: string }
 
 export function AccountDetailClient({ accountId }: Props) {
   const router = useRouter()
-  const { accounts, isLoading: accountsLoading, updateAccount, deleteAccount } = useAccounts()
+  const { accounts, isLoading: accountsLoading, updateAccount, updateResin, deleteAccount } = useAccounts()
   
   const [gameDate] = useState(() => getCurrentGameDate('genshin'))
   const { tasks, toggleTask } = useTasks(gameDate)
@@ -32,6 +34,7 @@ export function AccountDetailClient({ accountId }: Props) {
   const [isEditing, setIsEditing] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
   const [isDeleting, setIsDeleting] = useState(false)
+  const [showUpdateDialog, setShowUpdateDialog] = useState(false)
 
   // Sync state when account is loaded
   useEffect(() => {
@@ -83,6 +86,16 @@ export function AccountDetailClient({ accountId }: Props) {
 
   const handleSyncResin = async () => {
     await updateAccount(accountId, { currentResin: computedResin })
+    toast.success('Resin berhasil disinkronisasi')
+  }
+
+  const handleUpdateResin = async (newResin: number, newSecondary?: number) => {
+    try {
+      await updateResin(accountId, newResin, newSecondary)
+      toast.success('Resin berhasil diupdate')
+    } catch (error) {
+      toast.error('Gagal mengupdate resin')
+    }
   }
 
   return (
@@ -116,13 +129,22 @@ export function AccountDetailClient({ accountId }: Props) {
                 <GameBadge game={account.game_type} className="mb-3" />
                 <h2 className="text-2xl font-bold text-[--text-primary]">{account.nickname}</h2>
               </div>
-              <button
-                onClick={handleSyncResin}
-                className="rounded-md p-2 text-[--text-muted] hover:bg-[--bg-surface-raised] hover:text-[--text-primary] transition-colors"
-                title="Sync Resin"
-              >
-                <RefreshCw className="h-5 w-5" />
-              </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setShowUpdateDialog(true)}
+                  className="rounded-md p-2 text-[--text-muted] hover:bg-[--bg-surface-raised] hover:text-[--text-primary] transition-colors"
+                  title="Update Resin Manual"
+                >
+                  <Edit2 className="h-5 w-5" />
+                </button>
+                <button
+                  onClick={handleSyncResin}
+                  className="rounded-md p-2 text-[--text-muted] hover:bg-[--bg-surface-raised] hover:text-[--text-primary] transition-colors"
+                  title="Sync Resin (Force Server Time)"
+                >
+                  <RefreshCw className="h-5 w-5" />
+                </button>
+              </div>
             </div>
 
             <div className="mb-4 relative z-10">
@@ -259,6 +281,20 @@ export function AccountDetailClient({ accountId }: Props) {
 
         </div>
       </main>
+
+      {showUpdateDialog && (
+        <UpdateResinDialog
+          account={account}
+          computedResin={computedResin}
+          computedSecondary={
+            config.secondaryResource && account.secondary_resin != null && account.secondary_max != null
+              ? computeResin(account.secondary_resin, account.secondary_max, account.last_updated_at, config.secondaryResource.regenRateSeconds, now)
+              : undefined
+          }
+          onClose={() => setShowUpdateDialog(false)}
+          onUpdate={handleUpdateResin}
+        />
+      )}
     </>
   )
 }

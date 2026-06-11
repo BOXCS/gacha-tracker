@@ -194,7 +194,7 @@ function AddAccountModal({ onClose, onAdd }: AddAccountModalProps) {
 // ─── Dashboard Client ─────────────────────────────────────────────────────────
 
 export function DashboardClient() {
-  const { accounts, isLoading: accountsLoading, addAccount, updateAccount, deleteAccount, reorderAccounts } = useAccounts()
+  const { accounts, isLoading: accountsLoading, addAccount, updateAccount, updateResin, deleteAccount, reorderAccounts } = useAccounts()
   
   // Asumsi semua game menggunakan timezone server UTC+8 (04:00 AM) yang sama
   // Jadi kita bisa menggunakan 'genshin' untuk mendapatkan gameDate global hari ini
@@ -214,6 +214,10 @@ export function DashboardClient() {
 
   const handleUpdateResin = async (id: string, computedResin: number) => {
     await updateAccount(id, { currentResin: computedResin })
+  }
+
+  const handleInlineUpdateResin = async (id: string, currentResin?: number, secondaryResin?: number) => {
+    await updateResin(id, currentResin, secondaryResin)
   }
 
   const handleDelete = async (id: string) => {
@@ -311,6 +315,7 @@ export function DashboardClient() {
           isLoading={accountsLoading || tasksLoading}
           tasks={tasks}
           onUpdate={handleUpdateResin}
+          onInlineUpdate={handleInlineUpdateResin}
           onDelete={handleDelete}
           onToggleTask={toggleTask}
           onReorder={reorderAccounts}
